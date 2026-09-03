@@ -1,0 +1,35 @@
+{
+  "feature_columns": [
+    "Re",
+    "Pr",
+    "Da",
+    "epsi",
+    "Hp_mm",
+    "a_mm",
+    "Lw_mm"
+  ],
+  "geometry_ids": [
+    "G01",
+    "G02",
+    "G03",
+    "G04",
+    "G05",
+    "G06"
+  ],
+  "n_geometries": 6,
+  "n_rows": 4608,
+  "parameter_levels": {
+    "Da": "1e-06, 1e-05, 0.0001, 0.001",
+    "Hp_mm": "0.1, 0.2, 0.3",
+    "Lw_mm": "0, 4, 5",
+    "Pr": "3, 6, 20, 50",
+    "Re": "25, 100, 250, 500",
+    "a_mm": "0, 0.1, 0.2, 0.3",
+    "epsi": "0.7, 0.75, 0.8, 0.85",
+    "geometry_id": "G01, G02, G03, G04, G05, G06"
+  },
+  "target_columns": [
+    "Nuavg",
+    "DelP_Pa"
+  ]
+}

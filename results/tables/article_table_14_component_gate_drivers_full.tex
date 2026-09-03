@@ -1,0 +1,54 @@
+\begin{tabular}{lllllllllllll}
+\hline
+model_family & split_name & split & split_family & target & n_abstain & U_alarm_pct & D_alarm_pct & V_alarm_pct & multi_alarm_pct & U_max_driver_pct & D_max_driver_pct & V_max_driver_pct \\
+\hline
+ExtraTrees & random80_20 & Random 80/20 & Random 80/20 & DelP_Pa & 140 & 35.714 & 67.143 & 0.000 & 2.857 & 35.714 & 67.143 & 0.000 \\
+ExtraTrees & random80_20 & Random 80/20 & Random 80/20 & Nuavg & 138 & 37.681 & 68.116 & 0.000 & 5.797 & 37.681 & 68.116 & 0.000 \\
+ExtraTrees & holdout_Re25 & Holdout Re=25 & Withheld Reynolds & DelP_Pa & 1152 & 1.215 & 100.000 & 0.000 & 1.215 & 1.215 & 100.000 & 0.000 \\
+ExtraTrees & holdout_Re25 & Holdout Re=25 & Withheld Reynolds & Nuavg & 1152 & 0.000 & 100.000 & 0.000 & 0.000 & 0.000 & 100.000 & 0.000 \\
+ExtraTrees & holdout_Re100 & Holdout Re=100 & Withheld Reynolds & DelP_Pa & 1152 & 100.000 & 83.507 & 0.000 & 83.507 & 100.000 & 83.507 & 0.000 \\
+ExtraTrees & holdout_Re100 & Holdout Re=100 & Withheld Reynolds & Nuavg & 1152 & 100.000 & 83.507 & 0.000 & 83.507 & 100.000 & 83.507 & 0.000 \\
+ExtraTrees & holdout_Re250 & Holdout Re=250 & Withheld Reynolds & DelP_Pa & 1152 & 100.000 & 3.212 & 0.000 & 3.212 & 100.000 & 3.212 & 0.000 \\
+ExtraTrees & holdout_Re250 & Holdout Re=250 & Withheld Reynolds & Nuavg & 1152 & 100.000 & 3.212 & 0.000 & 3.212 & 100.000 & 3.212 & 0.000 \\
+ExtraTrees & holdout_Re500 & Holdout Re=500 & Withheld Reynolds & DelP_Pa & 965 & 1.347 & 100.000 & 0.000 & 1.347 & 1.347 & 100.000 & 0.000 \\
+ExtraTrees & holdout_Re500 & Holdout Re=500 & Withheld Reynolds & Nuavg & 966 & 2.174 & 99.896 & 0.000 & 2.070 & 2.174 & 99.896 & 0.000 \\
+ExtraTrees & holdout_G01 & Holdout G01 & Withheld geometry & DelP_Pa & 768 & 0.000 & 100.000 & 0.000 & 0.000 & 0.000 & 100.000 & 0.000 \\
+ExtraTrees & holdout_G01 & Holdout G01 & Withheld geometry & Nuavg & 768 & 3.255 & 100.000 & 0.000 & 3.255 & 3.255 & 100.000 & 0.000 \\
+ExtraTrees & holdout_G02 & Holdout G02 & Withheld geometry & DelP_Pa & 748 & 98.396 & 11.898 & 0.000 & 10.294 & 98.396 & 11.898 & 0.000 \\
+ExtraTrees & holdout_G02 & Holdout G02 & Withheld geometry & Nuavg & 464 & 86.853 & 19.181 & 0.000 & 6.034 & 86.853 & 19.181 & 0.000 \\
+ExtraTrees & holdout_G03 & Holdout G03 & Withheld geometry & DelP_Pa & 342 & 3.216 & 98.246 & 0.000 & 1.462 & 3.216 & 98.246 & 0.000 \\
+ExtraTrees & holdout_G03 & Holdout G03 & Withheld geometry & Nuavg & 399 & 28.822 & 84.211 & 0.000 & 13.033 & 28.822 & 84.211 & 0.000 \\
+ExtraTrees & holdout_G04 & Holdout G04 & Withheld geometry & DelP_Pa & 768 & 100.000 & 8.984 & 0.000 & 8.984 & 100.000 & 8.984 & 0.000 \\
+ExtraTrees & holdout_G04 & Holdout G04 & Withheld geometry & Nuavg & 628 & 96.497 & 10.987 & 0.000 & 7.484 & 96.497 & 10.987 & 0.000 \\
+ExtraTrees & holdout_G05 & Holdout G05 & Withheld geometry & DelP_Pa & 200 & 8.500 & 96.000 & 0.000 & 4.500 & 8.500 & 96.000 & 0.000 \\
+ExtraTrees & holdout_G05 & Holdout G05 & Withheld geometry & Nuavg & 389 & 64.524 & 49.357 & 0.000 & 13.882 & 64.524 & 49.357 & 0.000 \\
+ExtraTrees & holdout_G06 & Holdout G06 & Withheld geometry & DelP_Pa & 768 & 2.734 & 100.000 & 0.000 & 2.734 & 2.734 & 100.000 & 0.000 \\
+ExtraTrees & holdout_G06 & Holdout G06 & Withheld geometry & Nuavg & 768 & 2.214 & 100.000 & 0.000 & 2.214 & 2.214 & 100.000 & 0.000 \\
+ExtraTrees & combined_G06_Re500 & Combined G06/Re500 & Combined G06/Re500 & DelP_Pa & 192 & 7.812 & 100.000 & 0.000 & 7.812 & 7.812 & 100.000 & 0.000 \\
+ExtraTrees & combined_G06_Re500 & Combined G06/Re500 & Combined G06/Re500 & Nuavg & 192 & 0.000 & 100.000 & 0.000 & 0.000 & 0.000 & 100.000 & 0.000 \\
+XGBoost & random80_20 & Random 80/20 & Random 80/20 & DelP_Pa & 126 & 34.127 & 74.603 & 0.000 & 8.730 & 34.127 & 74.603 & 0.000 \\
+XGBoost & random80_20 & Random 80/20 & Random 80/20 & Nuavg & 133 & 45.113 & 70.677 & 0.000 & 15.789 & 45.113 & 70.677 & 0.000 \\
+XGBoost & holdout_Re25 & Holdout Re=25 & Withheld Reynolds & DelP_Pa & 1152 & 2.604 & 100.000 & 0.000 & 2.604 & 2.604 & 100.000 & 0.000 \\
+XGBoost & holdout_Re25 & Holdout Re=25 & Withheld Reynolds & Nuavg & 1152 & 0.781 & 100.000 & 0.000 & 0.781 & 0.781 & 100.000 & 0.000 \\
+XGBoost & holdout_Re100 & Holdout Re=100 & Withheld Reynolds & DelP_Pa & 964 & 2.490 & 99.793 & 0.000 & 2.282 & 2.490 & 99.793 & 0.000 \\
+XGBoost & holdout_Re100 & Holdout Re=100 & Withheld Reynolds & Nuavg & 963 & 2.492 & 99.896 & 0.000 & 2.388 & 2.492 & 99.896 & 0.000 \\
+XGBoost & holdout_Re250 & Holdout Re=250 & Withheld Reynolds & DelP_Pa & 47 & 23.404 & 78.723 & 0.000 & 2.128 & 23.404 & 78.723 & 0.000 \\
+XGBoost & holdout_Re250 & Holdout Re=250 & Withheld Reynolds & Nuavg & 44 & 18.182 & 84.091 & 0.000 & 2.273 & 18.182 & 84.091 & 0.000 \\
+XGBoost & holdout_Re500 & Holdout Re=500 & Withheld Reynolds & DelP_Pa & 965 & 0.622 & 100.000 & 0.000 & 0.622 & 0.622 & 100.000 & 0.000 \\
+XGBoost & holdout_Re500 & Holdout Re=500 & Withheld Reynolds & Nuavg & 966 & 1.967 & 99.896 & 0.000 & 1.863 & 1.967 & 99.896 & 0.000 \\
+XGBoost & holdout_G01 & Holdout G01 & Withheld geometry & DelP_Pa & 768 & 0.260 & 100.000 & 0.000 & 0.260 & 0.260 & 100.000 & 0.000 \\
+XGBoost & holdout_G01 & Holdout G01 & Withheld geometry & Nuavg & 768 & 1.042 & 100.000 & 0.000 & 1.042 & 1.042 & 100.000 & 0.000 \\
+XGBoost & holdout_G02 & Holdout G02 & Withheld geometry & DelP_Pa & 115 & 36.522 & 77.391 & 0.000 & 13.913 & 36.522 & 77.391 & 0.000 \\
+XGBoost & holdout_G02 & Holdout G02 & Withheld geometry & Nuavg & 318 & 77.987 & 27.987 & 0.000 & 5.975 & 77.987 & 27.987 & 0.000 \\
+XGBoost & holdout_G03 & Holdout G03 & Withheld geometry & DelP_Pa & 359 & 14.763 & 93.593 & 0.000 & 8.357 & 14.763 & 93.593 & 0.000 \\
+XGBoost & holdout_G03 & Holdout G03 & Withheld geometry & Nuavg & 408 & 39.951 & 82.353 & 0.000 & 22.304 & 39.951 & 82.353 & 0.000 \\
+XGBoost & holdout_G04 & Holdout G04 & Withheld geometry & DelP_Pa & 117 & 49.573 & 58.974 & 0.000 & 8.547 & 49.573 & 58.974 & 0.000 \\
+XGBoost & holdout_G04 & Holdout G04 & Withheld geometry & Nuavg & 325 & 86.462 & 21.231 & 0.000 & 7.692 & 86.462 & 21.231 & 0.000 \\
+XGBoost & holdout_G05 & Holdout G05 & Withheld geometry & DelP_Pa & 251 & 40.239 & 76.494 & 0.000 & 16.733 & 40.239 & 76.494 & 0.000 \\
+XGBoost & holdout_G05 & Holdout G05 & Withheld geometry & Nuavg & 259 & 38.996 & 74.131 & 0.000 & 13.127 & 38.996 & 74.131 & 0.000 \\
+XGBoost & holdout_G06 & Holdout G06 & Withheld geometry & DelP_Pa & 768 & 0.130 & 100.000 & 0.000 & 0.130 & 0.130 & 100.000 & 0.000 \\
+XGBoost & holdout_G06 & Holdout G06 & Withheld geometry & Nuavg & 768 & 2.083 & 100.000 & 0.000 & 2.083 & 2.083 & 100.000 & 0.000 \\
+XGBoost & combined_G06_Re500 & Combined G06/Re500 & Combined G06/Re500 & DelP_Pa & 192 & 0.000 & 100.000 & 0.000 & 0.000 & 0.000 & 100.000 & 0.000 \\
+XGBoost & combined_G06_Re500 & Combined G06/Re500 & Combined G06/Re500 & Nuavg & 192 & 5.729 & 100.000 & 0.000 & 5.729 & 5.729 & 100.000 & 0.000 \\
+\hline
+\end{tabular}

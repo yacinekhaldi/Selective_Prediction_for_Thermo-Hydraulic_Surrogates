@@ -1,0 +1,8 @@
+split_name,target,feature,importance
+holdout_G05,DelP_Pa,Re,0.6250037550926208
+holdout_G05,DelP_Pa,Da,0.27543575763702394
+holdout_G05,DelP_Pa,Hp_mm,0.09144771248102188
+holdout_G05,DelP_Pa,a_mm,0.007283348590135574
+holdout_G05,DelP_Pa,Lw_mm,0.0003249173634685576
+holdout_G05,DelP_Pa,epsi,0.00027441817510407416
+holdout_G05,DelP_Pa,Pr,0.00023009544820524753

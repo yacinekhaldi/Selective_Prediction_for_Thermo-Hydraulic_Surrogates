@@ -1,0 +1,8 @@
+split_name,target,feature,importance
+random80_20,Nuavg,Pr,0.5342026650905609
+random80_20,Nuavg,Re,0.4339277625083923
+random80_20,Nuavg,Hp_mm,0.01814422458410263
+random80_20,Nuavg,a_mm,0.008397579193115234
+random80_20,Nuavg,Da,0.0024817584082484244
+random80_20,Nuavg,Lw_mm,0.0017935429699718953
+random80_20,Nuavg,epsi,0.0010524871991947292

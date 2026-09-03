@@ -1,0 +1,8 @@
+model_family,split_name,target,feature,importance
+ExtraTrees,combined_G06_Re500,Nuavg,Pr,0.5450217473888049
+ExtraTrees,combined_G06_Re500,Nuavg,Re,0.41740167445951304
+ExtraTrees,combined_G06_Re500,Nuavg,Hp_mm,0.02902268041605745
+ExtraTrees,combined_G06_Re500,Nuavg,a_mm,0.005523532359838544
+ExtraTrees,combined_G06_Re500,Nuavg,Da,0.0016738965321351543
+ExtraTrees,combined_G06_Re500,Nuavg,Lw_mm,0.0013554515326538697
+ExtraTrees,combined_G06_Re500,Nuavg,epsi,1.0173109968512972e-06

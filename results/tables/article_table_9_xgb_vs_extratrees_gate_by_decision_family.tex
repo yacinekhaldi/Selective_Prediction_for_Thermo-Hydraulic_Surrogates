@@ -1,0 +1,54 @@
+\begin{tabular}{llllllll}
+\hline
+model_family & split_family & target & decision & n_cases & coverage_pct & MAPE_pct & failure_rate_pct \\
+\hline
+ExtraTrees & combined_shift & DelP_Pa & predict & 0 & 0.000 & -- & -- \\
+ExtraTrees & combined_shift & DelP_Pa & warn & 0 & 0.000 & -- & -- \\
+ExtraTrees & combined_shift & DelP_Pa & abstain & 192 & 100.000 & 68.172 & 100.000 \\
+ExtraTrees & combined_shift & Nuavg & predict & 0 & 0.000 & -- & -- \\
+ExtraTrees & combined_shift & Nuavg & warn & 0 & 0.000 & -- & -- \\
+ExtraTrees & combined_shift & Nuavg & abstain & 192 & 100.000 & 29.014 & 100.000 \\
+ExtraTrees & in_distribution & DelP_Pa & predict & 716 & 77.657 & 0.084 & 0.000 \\
+ExtraTrees & in_distribution & DelP_Pa & warn & 66 & 7.158 & 0.147 & 0.000 \\
+ExtraTrees & in_distribution & DelP_Pa & abstain & 140 & 15.184 & 0.219 & 0.000 \\
+ExtraTrees & in_distribution & Nuavg & predict & 703 & 76.247 & 0.220 & 0.427 \\
+ExtraTrees & in_distribution & Nuavg & warn & 81 & 8.785 & 0.396 & 0.000 \\
+ExtraTrees & in_distribution & Nuavg & abstain & 138 & 14.967 & 0.802 & 3.623 \\
+ExtraTrees & withheld_geometry & DelP_Pa & predict & 714 & 15.495 & 1.171 & 0.000 \\
+ExtraTrees & withheld_geometry & DelP_Pa & warn & 300 & 6.510 & 0.776 & 0.000 \\
+ExtraTrees & withheld_geometry & DelP_Pa & abstain & 3594 & 77.995 & 6.383 & 18.475 \\
+ExtraTrees & withheld_geometry & Nuavg & predict & 867 & 18.815 & 1.050 & 3.230 \\
+ExtraTrees & withheld_geometry & Nuavg & warn & 325 & 7.053 & 1.035 & 3.385 \\
+ExtraTrees & withheld_geometry & Nuavg & abstain & 3416 & 74.132 & 2.802 & 14.930 \\
+ExtraTrees & withheld_reynolds & DelP_Pa & predict & 0 & 0.000 & -- & -- \\
+ExtraTrees & withheld_reynolds & DelP_Pa & warn & 187 & 4.058 & 58.271 & 100.000 \\
+ExtraTrees & withheld_reynolds & DelP_Pa & abstain & 4421 & 95.942 & 118.275 & 100.000 \\
+ExtraTrees & withheld_reynolds & Nuavg & predict & 0 & 0.000 & -- & -- \\
+ExtraTrees & withheld_reynolds & Nuavg & warn & 186 & 4.036 & 18.454 & 100.000 \\
+ExtraTrees & withheld_reynolds & Nuavg & abstain & 4422 & 95.964 & 18.895 & 83.605 \\
+XGBoost & combined_shift & DelP_Pa & predict & 0 & 0.000 & -- & -- \\
+XGBoost & combined_shift & DelP_Pa & warn & 0 & 0.000 & -- & -- \\
+XGBoost & combined_shift & DelP_Pa & abstain & 192 & 100.000 & 68.184 & 100.000 \\
+XGBoost & combined_shift & Nuavg & predict & 0 & 0.000 & -- & -- \\
+XGBoost & combined_shift & Nuavg & warn & 0 & 0.000 & -- & -- \\
+XGBoost & combined_shift & Nuavg & abstain & 192 & 100.000 & 29.005 & 100.000 \\
+XGBoost & in_distribution & DelP_Pa & predict & 718 & 77.874 & 0.328 & 0.000 \\
+XGBoost & in_distribution & DelP_Pa & warn & 78 & 8.460 & 0.437 & 0.000 \\
+XGBoost & in_distribution & DelP_Pa & abstain & 126 & 13.666 & 1.019 & 0.000 \\
+XGBoost & in_distribution & Nuavg & predict & 716 & 77.657 & 0.398 & 0.140 \\
+XGBoost & in_distribution & Nuavg & warn & 73 & 7.918 & 0.724 & 1.370 \\
+XGBoost & in_distribution & Nuavg & abstain & 133 & 14.425 & 1.033 & 3.759 \\
+XGBoost & withheld_geometry & DelP_Pa & predict & 1738 & 37.717 & 1.002 & 0.000 \\
+XGBoost & withheld_geometry & DelP_Pa & warn & 492 & 10.677 & 0.808 & 0.000 \\
+XGBoost & withheld_geometry & DelP_Pa & abstain & 2378 & 51.606 & 8.043 & 26.030 \\
+XGBoost & withheld_geometry & Nuavg & predict & 1389 & 30.143 & 1.625 & 6.767 \\
+XGBoost & withheld_geometry & Nuavg & warn & 373 & 8.095 & 1.511 & 6.971 \\
+XGBoost & withheld_geometry & Nuavg & abstain & 2846 & 61.762 & 2.890 & 16.866 \\
+XGBoost & withheld_reynolds & DelP_Pa & predict & 1009 & 21.897 & 65.170 & 100.000 \\
+XGBoost & withheld_reynolds & DelP_Pa & warn & 471 & 10.221 & 66.935 & 100.000 \\
+XGBoost & withheld_reynolds & DelP_Pa & abstain & 3128 & 67.882 & 164.724 & 100.000 \\
+XGBoost & withheld_reynolds & Nuavg & predict & 1005 & 21.810 & 23.627 & 100.000 \\
+XGBoost & withheld_reynolds & Nuavg & warn & 478 & 10.373 & 21.726 & 100.000 \\
+XGBoost & withheld_reynolds & Nuavg & abstain & 3125 & 67.817 & 31.110 & 100.000 \\
+\hline
+\end{tabular}

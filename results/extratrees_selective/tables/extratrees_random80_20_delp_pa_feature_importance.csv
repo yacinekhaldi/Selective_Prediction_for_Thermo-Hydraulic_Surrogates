@@ -1,0 +1,8 @@
+model_family,split_name,target,feature,importance
+ExtraTrees,random80_20,DelP_Pa,Re,0.5828488624608519
+ExtraTrees,random80_20,DelP_Pa,Da,0.3042415953155429
+ExtraTrees,random80_20,DelP_Pa,Hp_mm,0.10480547215294822
+ExtraTrees,random80_20,DelP_Pa,a_mm,0.007780473020275571
+ExtraTrees,random80_20,DelP_Pa,Lw_mm,0.00030482021060212344
+ExtraTrees,random80_20,DelP_Pa,epsi,1.8656790078368284e-05
+ExtraTrees,random80_20,DelP_Pa,Pr,1.200497010014581e-07

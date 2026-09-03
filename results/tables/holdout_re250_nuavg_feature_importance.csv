@@ -1,0 +1,8 @@
+split_name,target,feature,importance
+holdout_Re250,Nuavg,Re,0.5391561627388001
+holdout_Re250,Nuavg,Pr,0.43712220191955564
+holdout_Re250,Nuavg,Hp_mm,0.013545906357467174
+holdout_Re250,Nuavg,a_mm,0.007220332510769367
+holdout_Re250,Nuavg,Da,0.001181913772597909
+holdout_Re250,Nuavg,Lw_mm,0.0011254227254539728
+holdout_Re250,Nuavg,epsi,0.0006480683339759707

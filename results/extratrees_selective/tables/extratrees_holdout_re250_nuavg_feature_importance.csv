@@ -1,0 +1,8 @@
+model_family,split_name,target,feature,importance
+ExtraTrees,holdout_Re250,Nuavg,Re,0.4858622071578485
+ExtraTrees,holdout_Re250,Nuavg,Pr,0.4708847451768288
+ExtraTrees,holdout_Re250,Nuavg,Hp_mm,0.024844305200273763
+ExtraTrees,holdout_Re250,Nuavg,a_mm,0.014915125847064106
+ExtraTrees,holdout_Re250,Nuavg,Da,0.0017510922227439323
+ExtraTrees,holdout_Re250,Nuavg,Lw_mm,0.0017271624872052652
+ExtraTrees,holdout_Re250,Nuavg,epsi,1.536190803558841e-05

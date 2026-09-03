@@ -1,0 +1,9 @@
+model_family,split_family,false_accept_nu_delp_pct_all,false_abstain_nu_delp_pct_all,retained_fail_nu_delp_pct
+ExtraTrees,Combined G06/Re500,0.0/0.0,0.0/0.0,--/--
+ExtraTrees,Random 80/20,0.3/0.0,14.4/15.2,0.4/0.0
+ExtraTrees,Withheld Reynolds,4.0/4.1,15.7/0.0,100.0/100.0
+ExtraTrees,Withheld geometry,0.8/0.0,63.1/63.6,3.3/0.0
+XGBoost,Combined G06/Re500,0.0/0.0,0.0/0.0,--/--
+XGBoost,Random 80/20,0.2/0.0,13.9/13.7,0.3/0.0
+XGBoost,Withheld Reynolds,32.2/32.1,0.0/0.0,100.0/100.0
+XGBoost,Withheld geometry,2.6/0.0,51.3/38.2,6.8/0.0

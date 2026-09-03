@@ -1,0 +1,22 @@
+\begin{tabular}{llllllll}
+\hline
+model_family & split_family & target & n_cases & MAPE_all_pct_CI & retained_cov_pct_CI & retained_failure_pct_CI & AURC_MAPE_pct_CI \\
+\hline
+ExtraTrees & Combined G06/Re500 & DelP_Pa & 192 & 68.18 [67.37, 69.07] & 0.0 [0.0, 0.0] & -- & 68.17 [66.99, 69.33] \\
+ExtraTrees & Combined G06/Re500 & Nuavg & 192 & 29.02 [27.52, 30.36] & 0.0 [0.0, 0.0] & -- & 29.04 [26.98, 30.97] \\
+ExtraTrees & Random 80/20 & DelP_Pa & 922 & 0.11 [0.09, 0.12] & 84.8 [82.6, 87.0] & 0.0 [0.0, 0.0] & 0.07 [0.06, 0.08] \\
+ExtraTrees & Random 80/20 & Nuavg & 922 & 0.32 [0.28, 0.37] & 85.0 [82.6, 87.4] & 0.4 [0.0, 0.9] & 0.19 [0.16, 0.22] \\
+ExtraTrees & Withheld Reynolds & DelP_Pa & 4608 & 115.87 [112.42, 119.26] & 4.1 [3.5, 4.6] & 100.0 [100.0, 100.0] & 110.30 [106.36, 114.49] \\
+ExtraTrees & Withheld Reynolds & Nuavg & 4608 & 18.88 [18.49, 19.32] & 4.0 [3.5, 4.6] & 100.0 [100.0, 100.0] & 18.85 [18.35, 19.34] \\
+ExtraTrees & Withheld geometry & DelP_Pa & 4608 & 5.21 [5.01, 5.41] & 22.0 [20.8, 23.2] & 0.0 [0.0, 0.0] & 3.59 [3.41, 3.78] \\
+ExtraTrees & Withheld geometry & Nuavg & 4608 & 2.35 [2.26, 2.44] & 25.9 [24.8, 27.2] & 3.3 [2.4, 4.4] & 1.78 [1.69, 1.87] \\
+XGBoost & Combined G06/Re500 & DelP_Pa & 192 & 68.19 [67.26, 69.08] & 0.0 [0.0, 0.0] & -- & 68.20 [67.04, 69.37] \\
+XGBoost & Combined G06/Re500 & Nuavg & 192 & 29.03 [27.64, 30.47] & 0.0 [0.0, 0.0] & -- & 29.01 [27.15, 30.99] \\
+XGBoost & Random 80/20 & DelP_Pa & 922 & 0.43 [0.40, 0.47] & 86.3 [84.2, 88.5] & 0.0 [0.0, 0.0] & 0.30 [0.29, 0.32] \\
+XGBoost & Random 80/20 & Nuavg & 922 & 0.52 [0.47, 0.56] & 85.5 [83.1, 87.5] & 0.3 [0.0, 0.6] & 0.36 [0.33, 0.39] \\
+XGBoost & Withheld Reynolds & DelP_Pa & 4608 & 132.84 [129.43, 136.54] & 32.1 [30.9, 33.4] & 100.0 [100.0, 100.0] & 98.38 [95.86, 100.83] \\
+XGBoost & Withheld Reynolds & Nuavg & 4608 & 28.50 [28.22, 28.79] & 32.2 [30.8, 33.5] & 100.0 [100.0, 100.0] & 25.71 [25.46, 25.94] \\
+XGBoost & Withheld geometry & DelP_Pa & 4608 & 4.61 [4.40, 4.82] & 48.4 [46.9, 50.0] & 0.0 [0.0, 0.0] & 2.23 [2.11, 2.35] \\
+XGBoost & Withheld geometry & Nuavg & 4608 & 2.40 [2.30, 2.49] & 38.2 [36.8, 39.4] & 6.8 [5.6, 8.1] & 1.95 [1.86, 2.04] \\
+\hline
+\end{tabular}

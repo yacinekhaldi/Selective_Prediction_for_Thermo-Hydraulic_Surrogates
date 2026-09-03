@@ -1,0 +1,8 @@
+model_family,split_name,target,feature,importance
+ExtraTrees,random80_20,Nuavg,Re,0.47763154632445043
+ExtraTrees,random80_20,Nuavg,Pr,0.47691115482658664
+ExtraTrees,random80_20,Nuavg,Hp_mm,0.026753388307720255
+ExtraTrees,random80_20,Nuavg,a_mm,0.014655919611685386
+ExtraTrees,random80_20,Nuavg,Lw_mm,0.002097828589113096
+ExtraTrees,random80_20,Nuavg,Da,0.0019173307610406236
+ExtraTrees,random80_20,Nuavg,epsi,3.28315794035235e-05

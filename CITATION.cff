@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript and dataset."
+title: "Selective Prediction for Thermo-Hydraulic Surrogates Under Distribution Shift"
+type: software
+authors:
+  - family-names: Azzaoui
+    given-names: Hanane
+  - family-names: Khaldi
+    given-names: Yacine
+  - family-names: Ben Bezziane
+    given-names: Mohamed
+  - family-names: Benzaoui
+    given-names: Amir
+repository-code: "https://github.com/yacinekhaldi/Selective_Prediction_for_Thermo-Hydraulic_Surrogates"
+version: "1.0.0"
+date-released: 2026-09-03
+keywords:
+  - selective prediction
+  - heat transfer
+  - pressure drop
+  - uncertainty quantification
+  - surrogate modeling

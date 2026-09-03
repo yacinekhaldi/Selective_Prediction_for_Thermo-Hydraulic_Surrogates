@@ -1,0 +1,18 @@
+\begin{tabular}{lllllll}
+\hline
+model_family & split & target & full_MAPE_pct & AURC_MAPE_pct & failure_AUROC & failure_AUPRC \\
+\hline
+ExtraTrees & Random 80/20 & DelP_Pa & 0.109 & 0.070 & -- & -- \\
+XGBoost & Random 80/20 & DelP_Pa & 0.431 & 0.302 & -- & -- \\
+ExtraTrees & Random 80/20 & Nuavg & 0.323 & 0.186 & 0.769 & 0.029 \\
+XGBoost & Random 80/20 & Nuavg & 0.515 & 0.357 & 0.832 & 0.035 \\
+ExtraTrees & Holdout Re=500 & DelP_Pa & 58.360 & 58.195 & -- & -- \\
+XGBoost & Holdout Re=500 & DelP_Pa & 58.371 & 58.200 & -- & -- \\
+ExtraTrees & Holdout Re=500 & Nuavg & 22.253 & 20.894 & -- & -- \\
+XGBoost & Holdout Re=500 & Nuavg & 22.256 & 20.905 & -- & -- \\
+ExtraTrees & Combined G06/Re500 & DelP_Pa & 68.172 & 69.406 & -- & -- \\
+XGBoost & Combined G06/Re500 & DelP_Pa & 68.184 & 69.417 & -- & -- \\
+ExtraTrees & Combined G06/Re500 & Nuavg & 29.014 & 21.383 & -- & -- \\
+XGBoost & Combined G06/Re500 & Nuavg & 29.005 & 21.352 & -- & -- \\
+\hline
+\end{tabular}

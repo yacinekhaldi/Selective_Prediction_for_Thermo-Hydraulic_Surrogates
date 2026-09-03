@@ -1,0 +1,8 @@
+split_name,target,feature,importance
+combined_G06_Re500,DelP_Pa,Re,0.515506899356842
+combined_G06_Re500,DelP_Pa,Da,0.37710863947868345
+combined_G06_Re500,DelP_Pa,Hp_mm,0.10522677600383759
+combined_G06_Re500,DelP_Pa,a_mm,0.0016330166952684521
+combined_G06_Re500,DelP_Pa,Lw_mm,0.0001789586211089045
+combined_G06_Re500,DelP_Pa,epsi,0.0001731430587824434
+combined_G06_Re500,DelP_Pa,Pr,0.00017262734472751619

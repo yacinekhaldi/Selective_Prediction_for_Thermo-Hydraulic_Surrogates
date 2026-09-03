@@ -1,0 +1,8 @@
+model_family,split_name,target,feature,importance
+ExtraTrees,holdout_G05,DelP_Pa,Re,0.5832460905055268
+ExtraTrees,holdout_G05,DelP_Pa,Da,0.3020928196599323
+ExtraTrees,holdout_G05,DelP_Pa,Hp_mm,0.10466009355702544
+ExtraTrees,holdout_G05,DelP_Pa,a_mm,0.009675216407679649
+ExtraTrees,holdout_G05,DelP_Pa,Lw_mm,0.00030562619153684555
+ExtraTrees,holdout_G05,DelP_Pa,epsi,2.0137271744781297e-05
+ExtraTrees,holdout_G05,DelP_Pa,Pr,1.6406554378589634e-08

@@ -1,0 +1,9 @@
+model_family,split_family,predict_cov_nu_delp_pct,warn_cov_nu_delp_pct,abstain_cov_nu_delp_pct,predict_mape_nu_delp_pct,warn_mape_nu_delp_pct,abstain_mape_nu_delp_pct,predict_fail_nu_delp_pct,warn_fail_nu_delp_pct,abstain_fail_nu_delp_pct
+ExtraTrees,Combined G06/Re500,0.0/0.0,0.0/0.0,100.0/100.0,--/--,--/--,29.014/68.172,--/--,--/--,100.0/100.0
+ExtraTrees,Random 80/20,76.2/77.7,8.8/7.2,15.0/15.2,0.220/0.084,0.396/0.147,0.802/0.219,0.4/0.0,0.0/0.0,3.6/0.0
+ExtraTrees,Withheld geometry,18.8/15.5,7.1/6.5,74.1/78.0,1.050/1.171,1.035/0.776,2.802/6.383,3.2/0.0,3.4/0.0,14.9/18.5
+ExtraTrees,Withheld Reynolds,0.0/0.0,4.0/4.1,96.0/95.9,--/--,18.454/58.271,18.895/118.275,--/--,100.0/100.0,83.6/100.0
+XGBoost,Combined G06/Re500,0.0/0.0,0.0/0.0,100.0/100.0,--/--,--/--,29.005/68.184,--/--,--/--,100.0/100.0
+XGBoost,Random 80/20,77.7/77.9,7.9/8.5,14.4/13.7,0.398/0.328,0.724/0.437,1.033/1.019,0.1/0.0,1.4/0.0,3.8/0.0
+XGBoost,Withheld geometry,30.1/37.7,8.1/10.7,61.8/51.6,1.625/1.002,1.511/0.808,2.890/8.043,6.8/0.0,7.0/0.0,16.9/26.0
+XGBoost,Withheld Reynolds,21.8/21.9,10.4/10.2,67.8/67.9,23.627/65.170,21.726/66.935,31.110/164.724,100.0/100.0,100.0/100.0,100.0/100.0

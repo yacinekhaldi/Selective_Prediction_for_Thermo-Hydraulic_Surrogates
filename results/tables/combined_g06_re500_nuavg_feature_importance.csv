@@ -1,0 +1,8 @@
+split_name,target,feature,importance
+combined_G06_Re500,Nuavg,Pr,0.5563860297203064
+combined_G06_Re500,Nuavg,Re,0.4221759557723999
+combined_G06_Re500,Nuavg,Hp_mm,0.01649348232895136
+combined_G06_Re500,Nuavg,a_mm,0.002716005127876997
+combined_G06_Re500,Nuavg,Da,0.0011217400431632995
+combined_G06_Re500,Nuavg,Lw_mm,0.0007969858823344111
+combined_G06_Re500,Nuavg,epsi,0.0003098381159361452

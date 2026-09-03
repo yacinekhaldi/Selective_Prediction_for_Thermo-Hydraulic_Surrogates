@@ -1,0 +1,8 @@
+split_name,target,feature,importance
+holdout_G03,Nuavg,Pr,0.546924090385437
+holdout_G03,Nuavg,Re,0.41674416661262514
+holdout_G03,Nuavg,Hp_mm,0.020809242874383925
+holdout_G03,Nuavg,a_mm,0.010156647115945817
+holdout_G03,Nuavg,Lw_mm,0.002902334090322256
+holdout_G03,Nuavg,Da,0.0019273699959740042
+holdout_G03,Nuavg,epsi,0.0005361886753235013
