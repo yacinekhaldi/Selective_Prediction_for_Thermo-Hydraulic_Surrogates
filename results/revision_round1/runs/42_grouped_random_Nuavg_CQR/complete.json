@@ -1,0 +1,18 @@
+{
+  "fit_seconds": 0.9429332999279723,
+  "conformal_calibration_groups": 138,
+  "conformal_correction": 0.12917086961945046,
+  "seed": 42,
+  "fold": "grouped_random",
+  "target": "Nuavg",
+  "model": "CQR",
+  "counts": {
+    "fit": 2208,
+    "tune": 372,
+    "scale": 552,
+    "cal": 552,
+    "id_test": 924,
+    "test": 924
+  },
+  "fit_case_hash": "c31051beca501fd30268c9443b7e0ac84acec3f9412b7c4764a30ca18d74f88b"
+}

@@ -1,0 +1,19 @@
+{
+  "kernel": "1.24**2 * RBF(length_scale=[3.36, 5.09, 6.57, 3.82, 3.22, 6.88, 7.94, 5.59, 7.95, 9.9, 4.04, 4.89, 25.8, 30, 4.76, 3.15, 5.99, 6.21, 16.5, 21.7, 26.7, 17.2, 11.3, 10.1, 11.5, 11.3, 9.96, 16.5])",
+  "hyperparameter_subset": 512,
+  "fit_seconds": 3.6557355999998435,
+  "protocol": "ubend_round1_v1",
+  "seed": 42,
+  "fold": "input_6_low",
+  "target": "CoolingObjective_K2m2",
+  "model": "GP_ARD",
+  "counts": {
+    "fit": 3434,
+    "tune": 573,
+    "scale": 859,
+    "cal": 858,
+    "id_test": 1432,
+    "test": 1790
+  },
+  "fit_case_hash": "767d94f2c55433a63650be585d23817864eca912210922b00bcf456fc5e510c2"
+}

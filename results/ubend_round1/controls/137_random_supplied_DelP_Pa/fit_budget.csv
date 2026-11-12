@@ -1,0 +1,4 @@
+seed,fold,target,model,fit_kind,n_fit,mape,fit_seconds,fit_case_hash,C,gamma,tune_mape,fit_status
+137,random_supplied,DelP_Pa,ExtraTrees_single,fit,4830,13.076886139815162,1.4536633999996411,365cce16ef4b759dce19e2551fa73d8c7e1c637a9de40c57bb43a96fe45ad304,,,,
+137,random_supplied,DelP_Pa,ExtraTrees_single,outer_training,8051,12.58173335292023,2.4929368000002796,016ff0c231da23c758224173b9aed8e8104871ca647d2fac2ab1567b32a20e77,,,,
+137,random_supplied,DelP_Pa,SVR_tuned,fit,4830,8.608459774517792,33.89053009999952,,10.0,0.01,10.482891487708082,0.0

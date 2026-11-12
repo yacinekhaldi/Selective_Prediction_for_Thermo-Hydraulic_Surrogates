@@ -1,0 +1,6 @@
+model,target,fold,method,n_runs,mean_mape,sd_mape,min_mape,max_mape,estimand
+ExtraTrees_seed,Nuavg,grouped_random,D,3,0.5112521910710877,0.06553679253057788,0.4446892364874087,0.5757122023729528,retrospective expected randomized tie ordering near 90% coverage
+ExtraTrees_seed,Nuavg,grouped_random,U,3,0.37003396457442483,0.026604419446133034,0.3438763823953666,0.3970637701423044,retrospective expected randomized tie ordering near 90% coverage
+ExtraTrees_seed,Nuavg,grouped_random,UD_max,3,0.4166324469207268,0.03497648645715515,0.3934296047208315,0.4568621004193509,retrospective expected randomized tie ordering near 90% coverage
+LogPolynomial,DelP_Pa,G06,UDV_max,3,124.53383821202976,15.213153739808407,107.88997579816368,137.72161258045787,retrospective expected randomized tie ordering near 90% coverage
+LogPolynomial,DelP_Pa,G06,UD_max,3,134.39167034570633,17.5692332133449,116.0345194658532,151.04949804676383,retrospective expected randomized tie ordering near 90% coverage

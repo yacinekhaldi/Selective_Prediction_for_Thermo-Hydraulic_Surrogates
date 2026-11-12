@@ -1,0 +1,25 @@
+{
+  "system": "wavy",
+  "seed": 271,
+  "fold": "G03",
+  "target": "Nuavg",
+  "model": "CQR",
+  "status": "passed",
+  "calibration_groups": 116,
+  "rank": 106,
+  "correction": 0.16429566292650577,
+  "row_random_descriptive_only": false,
+  "coverage": [
+    {
+      "role": "id_test",
+      "row_coverage": 0.95703125,
+      "group_coverage": 0.8802083333333334
+    },
+    {
+      "role": "test",
+      "row_coverage": 0.69921875,
+      "group_coverage": 0.515625
+    }
+  ],
+  "fit_tune_scale_vs_cal_group_overlap": 0
+}

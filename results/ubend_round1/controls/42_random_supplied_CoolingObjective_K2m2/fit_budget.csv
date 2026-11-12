@@ -1,0 +1,4 @@
+seed,fold,target,model,fit_kind,n_fit,mape,fit_seconds,fit_case_hash,C,gamma,tune_mape,fit_status
+42,random_supplied,CoolingObjective_K2m2,ExtraTrees_single,fit,4830,4.673075188508645,1.5661939999999959,89c5e2a70a6514335e368433152c463a026ef08e17a946866ecb741f8d6d63f6,,,,
+42,random_supplied,CoolingObjective_K2m2,ExtraTrees_single,outer_training,8051,4.492924988842421,2.6761204000004,484fc6766784d1c5b4688211779ff4835a4cc2510e8cb217ae707268c2a0b203,,,,
+42,random_supplied,CoolingObjective_K2m2,SVR_tuned,fit,4830,2.28684036807086,35.059951100000035,,10.0,0.01,2.2276593122090964,0.0

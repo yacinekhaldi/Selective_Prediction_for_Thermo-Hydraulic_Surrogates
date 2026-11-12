@@ -1,0 +1,25 @@
+{
+  "system": "ubend",
+  "seed": 271,
+  "fold": "input_12_middle",
+  "target": "CoolingObjective_K2m2",
+  "model": "CQR",
+  "status": "passed",
+  "calibration_groups": 858,
+  "rank": 774,
+  "correction": 0.2230106274622079,
+  "row_random_descriptive_only": false,
+  "coverage": [
+    {
+      "role": "id_test",
+      "row_coverage": 0.9294692737430168,
+      "group_coverage": 0.9294692737430168
+    },
+    {
+      "role": "test",
+      "row_coverage": 0.9245810055865922,
+      "group_coverage": 0.9245810055865922
+    }
+  ],
+  "fit_tune_scale_vs_cal_group_overlap": 0
+}

@@ -1,57 +1,11 @@
-# Data and Results Guide
+# Data and results
 
-## Dataset provenance
+The wavy-channel analyzed CSV is attributed to the cited V2 release. Its SHA-256 is `91ed5652d0403e6956a155ed8ba1163f9a703afdef296031c02986603f838aea`. The primary evaluation holds complete non-Pr input tuples together and separates interior missing-Re interpolation from endpoint extrapolation. Original processed solver responses are reference data, not independently revalidated CFD truth.
 
-The project uses the CFD-informed partially porous wavy-channel dataset
-distributed through Mendeley Data. The extracted source release is retained in
-`data/raw/mendeley_wavy_channel/ML-CFD-Wavy-Channel-Surrogate/`, together with
-its metadata, split definitions, source models, predictions, tables, and plot
-data. The cleaned long-form file used by the main workflow is in
-`02_processed_data/ML_dataset_longform.csv`.
+U-bend uses the fixed tabular commit `838b96a5c7e72eaf1177f8b8b49c854b80f20592` from `JDecke/ubend-cfd`, associated with Decke, Wuensch and Sick, Data in Brief 50 (2023), 109477, DOI 10.1016/j.dib.2023.109477. Its source manifest records all exact raw hashes. Of 10,000 designs, 8,946 successful cases provide regression targets; 989 mesh failures and 65 solver failures are kept separately. No failed-case sentinel enters a physical pressure column. The supplied successful split has 8,051 train / 895 test rows. Models are fitted and calibrated separately for the two systems.
 
-The dataset contains 4,608 CFD-derived cases, 18 geometry configurations, and
-256 operating-condition combinations. Inputs include Reynolds number, Prandtl
-number, Darcy number, porosity, porous-slab thickness, wave amplitude, and
-wavelength. Targets are average Nusselt number and pressure drop.
+MAPE/APE are percentages. Coverage, failure prevalence, retained failure, false acceptance and false abstention are fractions in raw metric files. Retained failure conditions on acceptance; false acceptance and false abstention use all test rows as denominator. Plot/table formatting converts fractions to percentages where labeled. AUROC/AUPRC target tolerance-defined errors unless explicitly prefixed `ood_`; support novelty and prediction failure are distinct. Blank undefined values are not zero.
 
-## Result directories
+Matched coverage uses expected uniform ordering inside score ties and may not be attainable by one deterministic cutoff. Constant-score discriminatory AURC is undefined. Bootstrap bands condition on the fitted model and observed designs; coarse geometry/coordinate strata do not establish transfer to new physical families. CQR interval coverage does not imply selective-risk control under shift. Complete failure-tolerance and binary-calibration sweeps are included.
 
-### Models
-
-`results/models/` contains benchmark and XGBoost artifacts. The
-`results/extratrees_selective/models/` directory contains the ExtraTrees
-selective ensembles. These files are binary artifacts and are configured for
-Git LFS.
-
-### Predictions
-
-Prediction files contain input identifiers, reference values, ensemble outputs,
-errors, reliability components, thresholds, and gate decisions. CSV is the
-portable format; XLSX and LaTeX files are presentation-oriented exports.
-
-### Tables
-
-The tables directory includes benchmark accuracy, calibration, split summaries,
-per-fold structured results, threshold clipping, component gate drivers,
-risk-coverage/AURC, false accepts, bootstrap intervals, and signed-error
-diagnostics.
-
-### Figures and plot data
-
-PNG and PDF figures are stored together. The matching plot-data files contain
-the numerical values used to draw calibration, reliability-score, and
-risk-coverage figures.
-
-### Reports
-
-Reports summarize the dataset, environment, generated artifacts, and manuscript
-results. They are useful for checking that an experiment run produced the
-expected files before preparing a release.
-
-## Interpretation cautions
-
-The dataset is structured rather than an independent random sample. Case counts
-should therefore be interpreted together with the split definition and the
-bootstrap or per-fold summaries. Warning decisions are cautionary outputs and
-do not validate a withheld operating regime. Abstention identifies cases that
-should receive additional CFD or experimental validation before design use.
+`results/ubend_round1/reports/RESULTS_SUMMARY.md` and PDF reports summarize all measured comparisons. `tables/` provides CSV and LaTeX, `figures/` provides PDF/PNG, and `plot_data/` supplies the exact aggregates/points behind figures. Checkpoint predictions remain in `runs/`; baseline predictions and saved seed-42 point models are separate. Scientific source data, result tables and model settings are preserved without changing their physical meaning.

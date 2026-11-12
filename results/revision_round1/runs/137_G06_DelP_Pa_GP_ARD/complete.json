@@ -1,0 +1,18 @@
+{
+  "kernel": "1.3**2 * RBF(length_scale=[3.83, 30, 1.99, 30, 5.29, 7.55, 21.9])",
+  "hyperparameter_subset": 512,
+  "fit_seconds": 2.2812322000972927,
+  "seed": 137,
+  "fold": "G06",
+  "target": "DelP_Pa",
+  "model": "GP_ARD",
+  "counts": {
+    "fit": 1840,
+    "tune": 308,
+    "scale": 460,
+    "cal": 464,
+    "id_test": 768,
+    "test": 768
+  },
+  "fit_case_hash": "7bdae856e7f8170b75637ab6aa696178cf84379987cfaee5d67cdbeaf2974f0a"
+}

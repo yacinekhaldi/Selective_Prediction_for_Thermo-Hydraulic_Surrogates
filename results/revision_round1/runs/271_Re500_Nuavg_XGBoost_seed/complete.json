@@ -1,0 +1,19 @@
+{
+  "mean_member_correlation": 0.9999741316199777,
+  "tune_mean_relative_std": 0.0015420757699757814,
+  "fit_seconds": 0.5847990999463946,
+  "test_single_member_mape": 22.28637924460816,
+  "seed": 271,
+  "fold": "Re500",
+  "target": "Nuavg",
+  "model": "XGBoost_seed",
+  "counts": {
+    "fit": 1656,
+    "tune": 276,
+    "scale": 416,
+    "cal": 416,
+    "id_test": 692,
+    "test": 1152
+  },
+  "fit_case_hash": "f717ce15ee5565382bea4ab5785391ebd9c348ecd1d1d575506683ce882f6331"
+}

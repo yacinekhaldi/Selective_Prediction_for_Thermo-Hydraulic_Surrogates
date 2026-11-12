@@ -1,0 +1,30 @@
+\begin{table}[htbp]\centering\small\setlength{\tabcolsep}{3pt}\begin{tabular}{llllll}
+\toprule
+Model & Target & Score & Coverage \% & Ret. MAPE \% & Interval coverage \%\\\midrule
+CQR & Cooling objective & CQR width & 89.348 & 3.215 & 89.609\\
+CQR & Cooling objective & Uncertainty & 89.181 & 3.230 & 89.609\\
+CQR & Cooling objective & Max U+D & 88.994 & 3.284 & 89.609\\
+CQR & Pressure drop & CQR width & 90.521 & 10.151 & 88.901\\
+CQR & Pressure drop & Uncertainty & 90.912 & 9.865 & 88.901\\
+CQR & Pressure drop & Max U+D & 90.149 & 10.108 & 88.901\\
+ET-bag & Cooling objective & Uncertainty & 88.231 & 4.862 & --\\
+ET-bag & Cooling objective & Max U+D & 89.423 & 4.805 & --\\
+ET-bag & Pressure drop & Uncertainty & 89.683 & 13.824 & --\\
+ET-bag & Pressure drop & Max U+D & 89.739 & 13.976 & --\\
+ET-seed & Cooling objective & Uncertainty & 89.777 & 4.795 & --\\
+ET-seed & Cooling objective & Max U+D & 89.050 & 4.713 & --\\
+ET-seed & Pressure drop & Uncertainty & 89.683 & 13.069 & --\\
+ET-seed & Pressure drop & Max U+D & 89.609 & 13.327 & --\\
+GP-ARD & Cooling objective & Uncertainty & 89.255 & 2.188 & --\\
+GP-ARD & Cooling objective & Max U+D & 89.851 & 2.204 & --\\
+GP-ARD & Pressure drop & Uncertainty & 89.832 & 7.250 & --\\
+GP-ARD & Pressure drop & Max U+D & 89.777 & 7.292 & --\\
+Log-poly & Cooling objective & Uncertainty & 100.000 & 2.554 & --\\
+Log-poly & Cooling objective & Max U+D & 90.354 & 2.480 & --\\
+Log-poly & Pressure drop & Uncertainty & 100.000 & 10.481 & --\\
+Log-poly & Pressure drop & Max U+D & 90.354 & 10.173 & --\\
+XGB & Cooling objective & Uncertainty & 89.330 & 3.352 & --\\
+XGB & Cooling objective & Max U+D & 89.460 & 3.360 & --\\
+XGB & Pressure drop & Uncertainty & 89.404 & 9.660 & --\\
+XGB & Pressure drop & Max U+D & 89.181 & 9.750 & --\\
+\bottomrule\end{tabular}\caption{Point-selection risk and CQR interval coverage are different estimands. GP pressure point estimates are inverse-log medians, while tree ensemble estimates are physical-unit member means.}\label{tab:ubend-competitors}\end{table}

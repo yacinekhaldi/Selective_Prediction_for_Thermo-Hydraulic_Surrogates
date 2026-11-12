@@ -1,0 +1,9 @@
+{
+  "rows": 4608,
+  "groups": 1152,
+  "constant_pressure_groups": 956,
+  "test_rows": 922,
+  "overlap_non_pr_rows": 918,
+  "matching_pressure_rows": 872,
+  "source_sha256": "91ed5652d0403e6956a155ed8ba1163f9a703afdef296031c02986603f838aea"
+}

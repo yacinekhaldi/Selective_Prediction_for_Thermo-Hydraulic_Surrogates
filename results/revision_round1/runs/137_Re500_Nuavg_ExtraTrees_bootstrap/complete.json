@@ -1,0 +1,19 @@
+{
+  "mean_member_correlation": 0.99939414255164,
+  "tune_mean_relative_std": 0.004224565119142665,
+  "fit_seconds": 0.6803971000481397,
+  "test_single_member_mape": 22.060037753288732,
+  "seed": 137,
+  "fold": "Re500",
+  "target": "Nuavg",
+  "model": "ExtraTrees_bootstrap",
+  "counts": {
+    "fit": 1656,
+    "tune": 276,
+    "scale": 416,
+    "cal": 416,
+    "id_test": 692,
+    "test": 1152
+  },
+  "fit_case_hash": "1af90b411f8246773a613aca07bec1df0a987ddcb17a8c327b60c5df374883ec"
+}

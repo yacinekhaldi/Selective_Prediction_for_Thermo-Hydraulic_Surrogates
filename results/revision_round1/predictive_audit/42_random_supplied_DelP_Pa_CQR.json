@@ -1,0 +1,20 @@
+{
+  "system": "wavy",
+  "seed": 42,
+  "fold": "random_supplied",
+  "target": "DelP_Pa",
+  "model": "CQR",
+  "status": "passed",
+  "calibration_groups": 459,
+  "rank": 414,
+  "correction": 0.037632182246639445,
+  "row_random_descriptive_only": true,
+  "coverage": [
+    {
+      "role": "test",
+      "row_coverage": 0.9067245119305857,
+      "group_coverage": 0.902046783625731
+    }
+  ],
+  "fit_tune_scale_vs_cal_group_overlap": 447
+}

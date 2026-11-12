@@ -1,0 +1,20 @@
+{
+  "mean_member_correlation": 0.9957858281400158,
+  "tune_mean_relative_std": 0.014062716544206554,
+  "fit_seconds": 4.130562800000007,
+  "test_single_member_mape": 14.289097666654996,
+  "protocol": "ubend_round1_v1",
+  "seed": 137,
+  "fold": "input_12_low",
+  "target": "DelP_Pa",
+  "model": "ExtraTrees_seed",
+  "counts": {
+    "fit": 3434,
+    "tune": 573,
+    "scale": 859,
+    "cal": 858,
+    "id_test": 1432,
+    "test": 1790
+  },
+  "fit_case_hash": "e9c0371748e309b983f2f8ebe517d6cda9315667963d726de52f03d594c1148b"
+}

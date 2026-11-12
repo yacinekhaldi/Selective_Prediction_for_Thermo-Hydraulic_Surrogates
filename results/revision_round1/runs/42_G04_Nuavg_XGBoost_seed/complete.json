@@ -1,0 +1,19 @@
+{
+  "mean_member_correlation": 0.9999798995224698,
+  "tune_mean_relative_std": 0.001758282887749374,
+  "fit_seconds": 0.47829630004707724,
+  "test_single_member_mape": 3.0122040155768826,
+  "seed": 42,
+  "fold": "G04",
+  "target": "Nuavg",
+  "model": "XGBoost_seed",
+  "counts": {
+    "fit": 1840,
+    "tune": 308,
+    "scale": 460,
+    "cal": 464,
+    "id_test": 768,
+    "test": 768
+  },
+  "fit_case_hash": "34ded3d6622007e856913ee11fac9747bd5d5620efcdeb154f84369787a804ce"
+}

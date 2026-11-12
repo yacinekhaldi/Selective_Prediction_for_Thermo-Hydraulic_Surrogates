@@ -1,0 +1,18 @@
+{
+  "degree": 3,
+  "ridge_alpha": 0.001,
+  "fit_seconds": 0.028493699966929853,
+  "seed": 271,
+  "fold": "G03",
+  "target": "DelP_Pa",
+  "model": "LogPolynomial",
+  "counts": {
+    "fit": 1840,
+    "tune": 308,
+    "scale": 460,
+    "cal": 464,
+    "id_test": 768,
+    "test": 768
+  },
+  "fit_case_hash": "650047ea0d02b092efa116648279835ecbc5fcef764ab28e7416dcdf6a022237"
+}

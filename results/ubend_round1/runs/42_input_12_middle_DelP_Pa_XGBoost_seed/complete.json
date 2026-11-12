@@ -1,0 +1,20 @@
+{
+  "mean_member_correlation": 0.9918915413978583,
+  "tune_mean_relative_std": 0.018607765436172485,
+  "fit_seconds": 6.175371999999697,
+  "test_single_member_mape": 10.84569698999634,
+  "protocol": "ubend_round1_v1",
+  "seed": 42,
+  "fold": "input_12_middle",
+  "target": "DelP_Pa",
+  "model": "XGBoost_seed",
+  "counts": {
+    "fit": 3434,
+    "tune": 573,
+    "scale": 859,
+    "cal": 858,
+    "id_test": 1432,
+    "test": 1790
+  },
+  "fit_case_hash": "0c60585d78d9e56f1e392f6181d6cff1863a35ebe2bf036978b79637f9c12d90"
+}

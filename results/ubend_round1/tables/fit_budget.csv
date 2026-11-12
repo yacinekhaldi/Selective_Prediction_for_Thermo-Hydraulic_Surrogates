@@ -1,0 +1,13 @@
+Fold,Target,Model,Fit budget,Fit rows,MAPE %
+Design random,Cooling objective,ExtraTrees_single,fit,4294.0,4.874067801025649
+Design random,Cooling objective,ExtraTrees_single,outer_training,7156.0,4.730501334985489
+Design random,Cooling objective,SVR_tuned,fit,4294.0,2.3723439310399166
+Design random,Pressure drop,ExtraTrees_single,fit,4294.0,13.815508476534257
+Design random,Pressure drop,ExtraTrees_single,outer_training,7156.0,13.089259516666788
+Design random,Pressure drop,SVR_tuned,fit,4294.0,9.141115519525215
+Supplied random,Cooling objective,ExtraTrees_single,fit,4830.0,4.644202871860815
+Supplied random,Cooling objective,ExtraTrees_single,outer_training,8051.0,4.4928505563259185
+Supplied random,Cooling objective,SVR_tuned,fit,4830.0,2.298404316665185
+Supplied random,Pressure drop,ExtraTrees_single,fit,4830.0,13.272180721999016
+Supplied random,Pressure drop,ExtraTrees_single,outer_training,8051.0,12.552425396639089
+Supplied random,Pressure drop,SVR_tuned,fit,4830.0,8.647480928808479

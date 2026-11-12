@@ -1,0 +1,18 @@
+{
+  "kernel": "0.731**2 * RBF(length_scale=[0.357, 1.31, 2.65, 30, 4.07, 1.31, 3.18])",
+  "hyperparameter_subset": 512,
+  "fit_seconds": 3.2252457999857143,
+  "seed": 271,
+  "fold": "random_supplied",
+  "target": "Nuavg",
+  "model": "GP_ARD",
+  "counts": {
+    "fit": 2211,
+    "tune": 369,
+    "scale": 553,
+    "cal": 553,
+    "test": 922,
+    "id_test": 0
+  },
+  "fit_case_hash": "b683b4bbd37e8b2c8e3ef737a469d3fe95fa79f31734cb8a19941c561f48c862"
+}

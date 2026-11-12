@@ -1,0 +1,57 @@
+\documentclass[11pt]{article}\usepackage[a4paper,margin=19mm]{geometry}\usepackage{booktabs,graphicx,hyperref,lmodern}\setlength{\emergencystretch}{3em}\begin{document}\section*{U-bend independent-system evaluation}
+All 468 planned experiments are included: six models, thirteen designs, two physical-unit targets, three complete partition/training seeds. Models are fitted and calibrated separately for this system.\par\medskip
+\subsection*{Design-random primary results}
+\begin{center}\small\begin{tabular}{llrrrr}\toprule Model & Target & All MAPE & Ret. MAPE & Ret. (\%) & Fail (\%)\\\midrule
+CQR & Cooling & 3.494 & 3.284 & 89.0 & 20.0\\
+ET-bag & Cooling & 4.974 & 4.805 & 89.4 & 37.6\\
+ET-seed & Cooling & 4.865 & 4.713 & 89.1 & 36.9\\
+GP-ARD & Cooling & 2.325 & 2.204 & 89.9 & 7.5\\
+Log-poly & Cooling & 2.554 & 2.480 & 90.4 & 10.6\\
+XGB & Cooling & 3.489 & 3.360 & 89.5 & 21.4\\
+CQR & Pressure & 10.825 & 10.108 & 90.1 & 39.9\\
+ET-bag & Pressure & 14.464 & 13.976 & 89.7 & 55.6\\
+ET-seed & Pressure & 13.769 & 13.327 & 89.6 & 53.2\\
+GP-ARD & Pressure & 7.583 & 7.292 & 89.8 & 25.9\\
+Log-poly & Pressure & 10.481 & 10.173 & 90.4 & 40.5\\
+XGB & Pressure & 10.333 & 9.750 & 89.2 & 38.8\\
+\bottomrule\end{tabular}\end{center}
+\subsection*{Comparative findings and limits}
+Across 132 nonempty shifted model/target/fold mean results, calibrated U+D max reduces retained MAPE relative to all-case MAPE in 131; 0 shifted combinations have zero mean coverage. This descriptive count compares different accepted populations and is not a guarantee or significance test.\par\medskip
+At approximately 90\% expected coverage, max fusion is better than both U-only and D-only in 28 of 156 averaged comparisons, worse than the stronger component in 101, and tied in the remainder. Expected random tie breaking need not be attainable by a deterministic cutoff. Complete per-run results remain available.\par\medskip
+GP-ARD cooling objective on coordinate shifts: coverage ranges from 27.9\% to 95.0\%; retained MAPE among nonempty sets ranges from 2.236\% to 3.281\%. Read these jointly with all-case error and retained failure, not as a statement of universal shifted reliability.\par\medskip
+GP-ARD pressure drop on coordinate shifts: coverage ranges from 32.5\% to 93.7\%; retained MAPE among nonempty sets ranges from 6.945\% to 11.403\%. Read these jointly with all-case error and retained failure, not as a statement of universal shifted reliability.\par\medskip
+The second system provides evidence beyond the wavy-channel grid, but it does not add methodological novelty to max fusion. The complete comparisons include both selective-error improvements and remaining failures at measured coverage.\par\medskip
+\subsection*{Protocol and interpretation}
+Primary failure tolerances are illustrative: cooling objective 5\%, pressure 10\%; full sweeps are exported.\par\medskip
+Low/high support tests and middle-slab interpolation tests are on fixed coordinates x0, x6 and x12. They are not Reynolds shifts or transfer to independently defined physical geometry families. Fold boundaries use covariates only, not response errors.\par\medskip
+The supplied split has 8,051 outer-training / 895 test cases. Design-random and structured evaluations use independent fit/tune/scale/calibration roles. All models share assignments.\par\medskip
+Geometry coordinates are signed and unlogged; fit-only standardization is used. Pressure is modeled using log1p except the log-polynomial log(y) comparator. GP pressure points are inverse-log medians; ensembles use physical-unit member means.\par\medskip
+CQR intervals have no shifted selective-risk guarantee. One row per design makes row/group coverage identical; Sobol sampling does not establish exchangeable random groups.\par\medskip
+Positivity and expanded-fit-range checks are descriptive diagnostics. No unsupported monotonic response law is imposed on geometry coordinates.\par\medskip
+Bootstrap intervals condition on the fitted model and observed successful designs. Six covariate-only KMeans strata and coordinate bins are coarse descriptive blocks, not physical simulation batches or confidence intervals for unseen families.\par\medskip
+Failed mesh/solver runs remain excluded from regression; sentinel values are not reference pressures. This study does not evaluate failure detection on those runs.\par\medskip
+Calibration-fixed selective results and expected matched-coverage rankings answer different questions. Empty accepted sets have undefined risk; single-class detection metrics and constant-score discriminatory AURC are undefined.\par\medskip
+Full-outer-training point baselines have a different budget from selective models. Same-fit single/ensemble and outer-training controls expose that distinction.\par\medskip
+\subsection*{Export layout}
+runs/: complete metadata, per-case predictions, assignments, calibration scores, per-run metrics, curves, matched coverage, sensitivity; CQR interval endpoints.\par\medskip
+tables/: measured CSV tables and article-ready LaTeX fragments.\par\medskip
+figures/: vector PDF and high-resolution PNG plots.\par\medskip
+plot\_data/: exact records/aggregates used in every figure.\par\medskip
+predictions/point\_baselines.csv: point-benchmark predictions; selective predictions remain in run folders.\par\medskip
+models/: saved seed-42/supplied-split point baseline estimators and settings; selective checkpoint estimators can be reproduced from code/settings and are not serialized.\par\medskip
+reports/: this assessment, protocol and figure/table PDFs.\par\medskip
+\noindent Reproduction from the project root:\begin{quote}\small
+\noindent\texttt{python }\nolinkurl{scripts/test_ubend.py}\par
+\noindent\texttt{python }\nolinkurl{scripts/run_ubend_study.py}\par
+\noindent\texttt{python }\nolinkurl{scripts/ubend_controls.py}\par
+\noindent\texttt{python }\nolinkurl{scripts/ubend_diagnostics.py}\par
+\noindent\texttt{python }\nolinkurl{scripts/validate_ubend_outputs.py}\par
+\noindent\texttt{python }\nolinkurl{scripts/ubend_exports.py}\par
+\end{quote}
+\subsection*{Data provenance}
+Source: JDecke/ubend-cfd, updated tabular release, pinned revision\par\noindent\nolinkurl{838b96a5c7e72eaf1177f8b8b49c854b80f20592}.\par\medskip
+Original dataset article: Decke, Wuensch and Sick, Data in Brief 50 (2023), 109477; DOI 10.1016/j.dib.2023.109477.\par\medskip
+The updated release declares CC-BY-NC-4.0. Source documentation and hashes are preserved under data/raw/ubend\_cfd. Results concern 8,946 successful simulations, conditional on exclusion of failed mesh/solver runs.\par\medskip
+Models are fitted and calibrated separately on U-bend. This is replication of the evaluation across systems, not transfer of the fitted wavy-channel predictor.\par\medskip
+Reproduce with requirements-ubend.txt. PDF exports additionally require pdflatex, booktabs, longtable, graphicx, hyperref and lmodern.\par\medskip
+\end{document}

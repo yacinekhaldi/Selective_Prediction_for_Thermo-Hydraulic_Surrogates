@@ -1,0 +1,18 @@
+{
+  "degree": 3,
+  "ridge_alpha": 0.1,
+  "fit_seconds": 0.021331100026145577,
+  "seed": 137,
+  "fold": "G03",
+  "target": "Nuavg",
+  "model": "LogPolynomial",
+  "counts": {
+    "fit": 1840,
+    "tune": 308,
+    "scale": 460,
+    "cal": 464,
+    "id_test": 768,
+    "test": 768
+  },
+  "fit_case_hash": "bf91ba90032eb33096957fd4cba9756e57ad0063e5abb50cbab404a579d10e39"
+}

@@ -1,0 +1,14 @@
+\begin{table}[htbp]\centering\scriptsize\caption{Same-data selective comparisons. CQR interval coverage is a different estimand from retained risk and is reported only for that model. GP uncertainty uses its predictive standard deviation.}\label{tab:competitors}
+\begin{tabular}{llllll}\toprule
+Model & Target & Score & Ret. (\%) & Ret. MAPE & Interval cov. (\%)\\\midrule
+ET-seed & $Nu_{\rm avg}$ & UD\_max & 88.49 & 0.41 & --\\
+XGB & $Nu_{\rm avg}$ & UD\_max & 87.95 & 0.51 & --\\
+GP-ARD & $Nu_{\rm avg}$ & UD\_max & 89.07 & 0.19 & --\\
+CQR & $Nu_{\rm avg}$ & UD\_max & 88.13 & 0.88 & 97.29\\
+CQR & $Nu_{\rm avg}$ & CQR\_width & 87.30 & 0.80 & 97.29\\
+ET-seed & $\Delta P$ & UD\_max & 87.70 & 0.82 & --\\
+XGB & $\Delta P$ & UD\_max & 90.26 & 3.60 & --\\
+GP-ARD & $\Delta P$ & UD\_max & 87.70 & 0.09 & --\\
+CQR & $\Delta P$ & UD\_max & 92.75 & 3.64 & 91.63\\
+CQR & $\Delta P$ & CQR\_width & 93.22 & 3.76 & 91.63\\
+\bottomrule\end{tabular}\end{table}

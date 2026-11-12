@@ -1,0 +1,19 @@
+{
+  "degree": 2,
+  "ridge_alpha": 10.0,
+  "fit_seconds": 2.69822269999986,
+  "protocol": "ubend_round1_v1",
+  "seed": 42,
+  "fold": "input_12_middle",
+  "target": "CoolingObjective_K2m2",
+  "model": "LogPolynomial",
+  "counts": {
+    "fit": 3434,
+    "tune": 573,
+    "scale": 859,
+    "cal": 858,
+    "id_test": 1432,
+    "test": 1790
+  },
+  "fit_case_hash": "0c60585d78d9e56f1e392f6181d6cff1863a35ebe2bf036978b79637f9c12d90"
+}

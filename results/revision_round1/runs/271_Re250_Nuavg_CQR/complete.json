@@ -1,0 +1,18 @@
+{
+  "fit_seconds": 1.1858557000523433,
+  "conformal_calibration_groups": 104,
+  "conformal_correction": 0.15242888853023473,
+  "seed": 271,
+  "fold": "Re250",
+  "target": "Nuavg",
+  "model": "CQR",
+  "counts": {
+    "fit": 1656,
+    "tune": 276,
+    "scale": 416,
+    "cal": 416,
+    "id_test": 692,
+    "test": 1152
+  },
+  "fit_case_hash": "06de1fdebf9e112cd7fb2d9b04232ea905551977a313c7d6f7e3c72eec6e77c8"
+}

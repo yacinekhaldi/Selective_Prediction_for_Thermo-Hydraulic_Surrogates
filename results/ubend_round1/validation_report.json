@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "experiments": 468,
+  "prediction_rows": 1249344,
+  "metric_rows": 12240,
+  "design_bootstrap_records": 156,
+  "coarse_bootstrap_records": 312,
+  "conformal_coverage_records": 144,
+  "mixed_configurations": 1980,
+  "controls": 36,
+  "point_baselines": 60,
+  "same_assignments_all_models_and_targets": true,
+  "all_roles_disjoint": true,
+  "calibration_cutoffs_verified": true,
+  "source_sha256": "36d352b0780ce82c4904784983364be49a9324cd395e9c825c8261426c99d946",
+  "code_sha256": {
+    "download_ubend.py": "62bf51d77932d661158587380c941b0aa46e420285fe8e7e57ce5aee007c758e",
+    "preprocess_ubend.py": "ea72472aeb53c79b0e44ee36552125339858a3eb71902e984ed7684252ad7053",
+    "run_ubend_study.py": "3ff1dceea7b864c870501efe93db4916b01b3e9663ed101de610597eb9f21b31",
+    "test_ubend.py": "f9468732ad34a295a29923cb04c3d6a56d7b25f5c2f26841d218f7df971883c9",
+    "ubend_controls.py": "5d2aeb5b9f907b862ec5a84b00576c90dd8b031b8cad218083911df45d7ddb77",
+    "ubend_diagnostics.py": "c4b0fc7af40ee0e3ba871d747ad63c11b5e1bf539c39d65c0e735e5232f278d5",
+    "ubend_experiments.py": "54e5d63d22807910e2dcfe9f9de84a267de86de08f44ce0b66c2d20ef6e6933a",
+    "ubend_exports.py": "4278c3a574e9fc1a3be50cbe3950d89c9059f25bf397ba756ce3a776de35b878",
+    "ubend_transform_audit.py": "39d90d2ff175d46c7b1837bb421ecad0f26d2c9e7a03e5404af95f4ca2d0367c",
+    "validate_ubend_outputs.py": "25e16a12fc58661408333f0b169d4fc987d2d144b1d9178e89dd4591c822e2c3"
+  },
+  "exports": {
+    "tables": 21,
+    "vector_figures": 10,
+    "plot_data": 10,
+    "saved_point_models_verified": 10
+  }
+}

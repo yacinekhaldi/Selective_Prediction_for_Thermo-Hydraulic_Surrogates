@@ -1,0 +1,19 @@
+{
+  "degree": 2,
+  "ridge_alpha": 10.0,
+  "fit_seconds": 2.866337000000385,
+  "protocol": "ubend_round1_v1",
+  "seed": 271,
+  "fold": "input_6_low",
+  "target": "DelP_Pa",
+  "model": "LogPolynomial",
+  "counts": {
+    "fit": 3434,
+    "tune": 573,
+    "scale": 859,
+    "cal": 858,
+    "id_test": 1432,
+    "test": 1790
+  },
+  "fit_case_hash": "2995bd2eb09d639b5011dcf8458e5f89410e325aa302b89ac406555abc4929e2"
+}

@@ -1,0 +1,14 @@
+{
+  "system": "wavy",
+  "seed": 271,
+  "fold": "grouped_random",
+  "target": "DelP_Pa",
+  "model": "GP_ARD",
+  "status": "passed",
+  "median_guard": 0,
+  "variance_s2_guard": 0,
+  "variance_exponent_guard": 0,
+  "max_mean_difference": 0.0,
+  "max_std_difference": 1.094410857511302e-11,
+  "max_relative_prediction_replay_difference": 3.9317392311800376e-16
+}

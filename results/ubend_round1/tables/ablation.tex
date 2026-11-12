@@ -1,0 +1,32 @@
+\begin{table}[htbp]\centering\small\setlength{\tabcolsep}{3pt}\begin{tabular}{llllllll}
+\toprule
+Score & Target & Coverage \% & Ret. MAPE \% & AURC & AUROC & AUPRC & Spearman\\\midrule
+Distance & Cooling objective & 90.354 & 3.396 & 3.109 & 0.575 & 0.279 & 0.098\\
+Distance & Pressure drop & 90.354 & 10.139 & 9.410 & 0.548 & 0.445 & 0.084\\
+Uncertainty & Cooling objective & 89.330 & 3.352 & 3.265 & 0.546 & 0.281 & 0.066\\
+Uncertainty & Pressure drop & 89.404 & 9.660 & 8.797 & 0.588 & 0.504 & 0.171\\
+Equal U+D+V & Cooling objective & 89.907 & 3.333 & 3.091 & 0.582 & 0.300 & 0.108\\
+Equal U+D+V & Pressure drop & 89.758 & 9.712 & 8.729 & 0.593 & 0.501 & 0.175\\
+Max U+D+V & Cooling objective & 89.460 & 3.360 & 3.106 & 0.584 & 0.297 & 0.107\\
+Max U+D+V & Pressure drop & 89.181 & 9.750 & 8.865 & 0.583 & 0.489 & 0.153\\
+Equal U+D & Cooling objective & 89.907 & 3.333 & 3.091 & 0.582 & 0.300 & 0.108\\
+Equal U+D & Pressure drop & 89.758 & 9.712 & 8.729 & 0.593 & 0.501 & 0.175\\
+Max U+D & Cooling objective & 89.460 & 3.360 & 3.106 & 0.584 & 0.297 & 0.107\\
+Max U+D & Pressure drop & 89.181 & 9.750 & 8.866 & 0.583 & 0.489 & 0.153\\
+Range/positivity & Cooling objective & 100.000 & 3.489 & -- & 0.500 & 0.226 & --\\
+Range/positivity & Pressure drop & 100.000 & 10.333 & -- & 0.500 & 0.406 & --\\
+all & Cooling objective & 100.000 & 3.489 & -- & 0.500 & 0.226 & --\\
+all & Pressure drop & 100.000 & 10.333 & -- & 0.500 & 0.406 & --\\
+Learned gate & Cooling objective & 90.279 & 3.341 & 3.077 & 0.587 & 0.298 & 0.111\\
+Learned gate & Pressure drop & 89.795 & 9.659 & 8.678 & 0.595 & 0.507 & 0.181\\
+Clipped reference & Cooling objective & 96.667 & 3.438 & 3.108 & 0.582 & 0.283 & 0.106\\
+Clipped reference & Pressure drop & 96.518 & 10.159 & 8.879 & 0.582 & 0.475 & 0.150\\
+Leverage & Cooling objective & 90.074 & 3.395 & 3.088 & 0.581 & 0.284 & 0.101\\
+Leverage & Pressure drop & 90.074 & 10.117 & 9.408 & 0.551 & 0.450 & 0.088\\
+oracle & Cooling objective & 90.000 & 2.695 & 1.394 & 1.000 & 1.000 & 1.000\\
+oracle & Pressure drop & 90.000 & 8.047 & 4.098 & 1.000 & 1.000 & 1.000\\
+Random & Cooling objective & 89.330 & 3.510 & 3.488 & 0.501 & 0.228 & -0.007\\
+Random & Pressure drop & 89.330 & 10.347 & 10.355 & 0.500 & 0.413 & -0.006\\
+Coordinate gap & Cooling objective & 88.696 & 3.497 & 3.536 & 0.484 & 0.222 & -0.013\\
+Coordinate gap & Pressure drop & 88.696 & 10.361 & 10.332 & 0.498 & 0.403 & 0.006\\
+\bottomrule\end{tabular}\caption{XGB score ablation on design-random tests. AURC is tie-aware and undefined for constant scores; it is a ranking diagnostic, not a risk guarantee.}\label{tab:ubend-ablation}\end{table}

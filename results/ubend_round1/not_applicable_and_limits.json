@@ -1,0 +1,8 @@
+{
+  "pressure_pr_audit": "not applicable: no Pr variants; each valid geometry is unique",
+  "re_diagnostics": "not applicable: fixed operating conditions; see geometry_diagnostics.csv",
+  "local_scaling_physics": "no transferable monotonicity assumption for signed geometry coordinates; see physics_activation.csv",
+  "coarse_bootstrap": "six covariate-only KMeans strata and five input_0 bins; descriptive conditional blocks, not physical geometry families or unseen-geometry confidence intervals",
+  "conformal": "one row per design, so group and row coverage coincide; exchangeability is a hypothetical condition, not established by Sobol sampling or imposed shifts",
+  "tolerances": "5% cooling and 10% pressure are illustrative analogues, not validated engineering requirements"
+}

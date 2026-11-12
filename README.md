@@ -1,91 +1,51 @@
 # Selective Prediction for Thermo-Hydraulic Surrogates
 
-This repository contains the code, datasets, trained models, predictions,
-figures, tables, and reports for the selective-prediction study of a
-partially porous wavy-channel heat-sink surrogate.
+This project evaluates binary acceptance and abstention for scalar thermo-hydraulic surrogates. The primary case study uses a partially porous wavy-channel dataset; cross-problem replication uses parameterized U-bend conjugate heat transfer. Models are fitted and calibrated separately for each system.
 
-The repository is associated with:
+The evaluation compares uncertainty, distance, fusion, leverage, support-gap, learned-gate and conformal-interval scores on common partitions. Fit, tune, score-scale and threshold-calibration roles are separate. Three complete seeds repeat each six-model, thirteen-design, two-target study. Empirical score calibration does not establish selective-risk control under distribution shift.
 
-`https://github.com/yacinekhaldi/Selective_Prediction_for_Thermo-Hydraulic_Surrogates`
+## Environment
 
-## Repository map
-
-- `data/`: processed data and the complete archived dataset release.
-- `scripts/`: experiment, ExtraTrees, and reviewer-table generation scripts.
-- `src/`: Python package namespace reserved for reusable project code.
-- `results/models/`: benchmark and XGBoost model artifacts.
-- `results/extratrees_selective/`: ExtraTrees selective-prediction artifacts.
-- `results/predictions/`: case-level predictions and gate decisions.
-- `results/tables/`: CSV, XLSX, and LaTeX result tables.
-- `results/figures/`: PNG and PDF publication figures.
-- `results/plot_data/`: calibration and risk-coverage data.
-- `results/reports/`: experiment summaries, profiles, manifests, and environment reports.
-- `docs/`: reproducibility, data/results, and GitHub upload guides.
-
-## Requirements
-
-Use Python 3.10 or newer. Install the scientific Python dependencies with:
+Use Python 3.14 and the pinned dependencies:
 
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 ```
 
-The XGBoost workflow can use a CUDA-enabled installation when available. The
-CPU path is supported for machines without a compatible GPU.
+Vector-figure generation uses Matplotlib. PDF compendiums additionally require `pdflatex` and standard LaTeX packages. Exact execution versions and source hashes are included with each result set.
 
-## Reproduce the experiments
-
-Run these commands from the repository root:
+## Run the studies
 
 ```powershell
-python scripts/run_experiments.py --cpu
-python scripts/run_extratrees_selective.py
-python scripts/generate_reviewer_tables.py
+python scripts/wavy_channel_study.py --stage all
+python scripts/download_ubend.py
+python scripts/preprocess_ubend.py
+python scripts/test_ubend.py
+python scripts/run_ubend_study.py
+python scripts/ubend_controls.py
+python scripts/ubend_diagnostics.py
+python scripts/ubend_transform_audit.py
+python scripts/audit_predictive_transforms.py
+python scripts/ubend_exports.py
+python scripts/validate_ubend_outputs.py --with-exports
 ```
 
-The first command regenerates the benchmark and XGBoost results. The second
-regenerates the ExtraTrees selective results. The third creates the detailed
-reviewer diagnostics and writes submission-ready copies under
-`results/submission_tables/` and `results/submission_figures/`.
+Completed model checkpoints are skipped automatically. The downloader uses the pinned source commit recorded in its manifest. The supplied U-bend tables are already included locally; downloading is unnecessary for reproducing the delivered results. The scientific archive omits large serialized point models; when using that archive, validate numerical outputs with `python scripts/validate_ubend_outputs.py` without `--with-exports`. The prepared repository includes the binaries and supports the full artifact check. To run individual wavy-channel stages, use `--stage tests`, `experiments`, `controls`, `intervals`, `diagnostics`, `exports`, or `validate`.
 
-To use the XGBoost GPU path, omit `--cpu` and install a compatible XGBoost
-build and CUDA runtime.
+## Data and output layout
 
-## Dataset
+- `data/raw/mendeley_wavy_channel/`: released wavy-channel data and attribution.
+- `data/raw/ubend_cfd/`: pinned U-bend Parquet tables, source documentation and checksums.
+- `data/preprocessed/ubend_cfd/`: cleaned physical-unit CSV, supplied split, separate failed cases and preprocessing metadata.
+- `results/revision_round1/`: wavy-channel measurements, complete runs and diagnostics.
+- `results/ubend_round1/`: U-bend measurements, complete runs, controls, tables, figures, plot data, predictions, saved point models and reports.
+- `scripts/`: reproducible scientific workflows.
+- `docs/`: data definitions and reproduction instructions.
 
-The primary cleaned dataset is:
+Each study contains 468 model experiments. Together they provide 936 experiments and 1,940,760 stored selective-prediction rows. The U-bend study additionally supplies 60 point benchmarks and 36 fit-budget/tuned-SVR control records. Detailed counts are verified in the validation reports.
 
-`data/raw/mendeley_wavy_channel/ML-CFD-Wavy-Channel-Surrogate/02_processed_data/ML_dataset_longform.csv`
+## Interpretation and attribution
 
-The fixed split and structured split definitions are under the corresponding
-`03_splits/` directory. The original archived dataset is retained under
-`data/raw/CFD-informed machine learning surrogate dataset fo/` for provenance.
-See `data/raw/mendeley_wavy_channel/ML-CFD-Wavy-Channel-Surrogate/README.txt`
-for the source dataset description and citation information.
+The U-bend cooling objective is an integrated squared temperature difference, not Nusselt number. Failed simulation codes are not regression targets. Coordinate-support holdouts are distinguished from Reynolds shifts and physical geometry-family transfer. Tolerances are illustrative and their sweeps are supplied. Undefined detection/ranking metrics and empty accepted sets are explicitly flagged. Source licenses and citations are preserved with the raw data; the updated U-bend release declares CC-BY-NC-4.0.
 
-## Existing results
-
-The committed `results/` tree is the generated result snapshot used for the
-manuscript. It includes raw case-level outputs, fitted models, figures, tables,
-calibration data, risk-coverage data, bootstrap summaries, and environment
-metadata. Re-running the scripts may update these files as software or hardware
-settings change.
-
-## Guides
-
-- `docs/reproducibility_guide.md`: complete run order and expected outputs.
-- `docs/data_and_results_guide.md`: dataset provenance and result-file map.
-- `docs/github_upload_guide.md`: Git and Git LFS upload instructions.
-
-## Citation
-
-Use `CITATION.cff` for the project citation metadata. Cite the associated
-manuscript and the Mendeley Data record when reusing the dataset.
-
-## Large files
-
-The archived dataset and trained model artifacts are large. `.gitattributes`
-configures Git LFS for ZIP, PKL, JOBLIB, and XLSX files. Install Git LFS before
-the first commit; the upload guide explains the required commands.
+See [the data/results guide](docs/data_and_results_guide.md), [reproduction guide](docs/reproducibility_guide.md), and [scientific supplement guide](SUPPLEMENT_README.md). Saved `.joblib` artifacts use the repository's Git LFS configuration. Cite the manuscript using `CITATION.cff` and cite each dataset's source record when using its data.

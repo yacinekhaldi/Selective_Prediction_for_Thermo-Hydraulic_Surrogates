@@ -1,0 +1,20 @@
+{
+  "mean_member_correlation": 0.9977508556055479,
+  "tune_mean_relative_std": 0.0044725636619668795,
+  "fit_seconds": 4.192622999999912,
+  "test_single_member_mape": 7.821734573621734,
+  "protocol": "ubend_round1_v1",
+  "seed": 271,
+  "fold": "input_0_low",
+  "target": "CoolingObjective_K2m2",
+  "model": "ExtraTrees_seed",
+  "counts": {
+    "fit": 3434,
+    "tune": 573,
+    "scale": 859,
+    "cal": 858,
+    "id_test": 1432,
+    "test": 1790
+  },
+  "fit_case_hash": "1cb85a2d9c70e55afe8984f243e65ca30bd70fd95d8c52eb39ced2a1cdf7d7cd"
+}

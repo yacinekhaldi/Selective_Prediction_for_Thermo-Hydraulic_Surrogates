@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "completed": 468,
+  "expected": 468,
+  "validation": "passed",
+  "exports": {
+    "tables": 21,
+    "vector_figures": 10,
+    "plot_data": 10,
+    "saved_point_models_verified": 10
+  }
+}

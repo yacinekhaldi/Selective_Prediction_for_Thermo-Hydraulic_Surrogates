@@ -1,74 +1,11 @@
-# Reproducibility Guide
+# Reproducible scientific workflows
 
-## 1. Prepare the environment
+Run commands from the repository root with Python 3.14 and `requirements.txt`. `README.md` lists the complete run order. `wavy_channel_study.py` provides stages for the primary system; the U-bend scripts provide the independent system. Scientific scripts resolve data/output paths relative to their checkout, without depending on the author's manuscript directory.
 
-From the repository root, create an isolated Python environment and install
-the dependencies:
+The wavy-channel model schema has seven inputs and two targets. U-bend has 28 signed geometry inputs, pressure loss and a cooling objective. The model schemas must remain separate. No standardizer is fitted on the complete dataset, and solver-iteration outputs never serve as input features. Model/hyperparameter selection uses tune labels only; acceptance cutoffs use independent calibration scores.
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-```
+Each completed run contains assignments, predictions, score metrics, calibration/cutoff diagnostics, matched coverage and completion metadata. U-bend runs additionally preserve calibration scores; CQR endpoints are supplied. Different seeds repeat the complete fitting/partition workflow; they are not independent physical systems. The code does not count ensemble members as independent repeats.
 
-The generated environment report records the package versions used for the
-committed result snapshot. The XGBoost experiment supports a CPU mode and a
-CUDA-enabled mode.
+Validate the delivered outputs with `python scripts/wavy_channel_study.py --stage validate` and `python scripts/validate_ubend_outputs.py --with-exports`. Numerical transform/replay checks are in the corresponding diagnostic files. The U-bend validator checks saved point-model predictions against their serialized artifacts. Full scientific outputs are delivered; no numerical result needs to be inferred from a manuscript image.
 
-## 2. Confirm the input files
-
-The main scripts resolve paths relative to the repository root. Confirm that
-these files exist before running:
-
-- `data/raw/mendeley_wavy_channel/ML-CFD-Wavy-Channel-Surrogate/02_processed_data/ML_dataset_longform.csv`
-- `data/raw/mendeley_wavy_channel/ML-CFD-Wavy-Channel-Surrogate/03_splits/random80_20_split.csv`
-- `data/raw/mendeley_wavy_channel/ML-CFD-Wavy-Channel-Surrogate/03_splits/withheld_re_folds.csv`
-- `data/raw/mendeley_wavy_channel/ML-CFD-Wavy-Channel-Surrogate/03_splits/logo_geometry_folds.csv`
-
-The scripts also maintain a normalized copy at
-`data/processed/thermal_wavy_channel_longform.csv`.
-
-## 3. Run the workflows
-
-Run the benchmark and primary selective workflow:
-
-```powershell
-python scripts/run_experiments.py --cpu
-```
-
-Run the companion selective ExtraTrees workflow:
-
-```powershell
-python scripts/run_extratrees_selective.py
-```
-
-Generate the reviewer diagnostics and publication exports:
-
-```powershell
-python scripts/generate_reviewer_tables.py
-```
-
-For GPU execution, remove `--cpu` from the first command and verify the
-XGBoost/CUDA combination in the environment report.
-
-## 4. Expected outputs
-
-The workflows write to `results/`:
-
-- `models/` and `extratrees_selective/models/`: fitted model ensembles.
-- `predictions/` and `extratrees_selective/predictions/`: case-level outputs.
-- `tables/` and `extratrees_selective/tables/`: metrics and diagnostics.
-- `figures/` and `extratrees_selective/figures/`: publication graphics.
-- `plot_data/` and `extratrees_selective/plot_data/`: score and curve data.
-- `reports/` and `extratrees_selective/reports/`: summaries and manifests.
-- `submission_tables/` and `submission_figures/`: reviewer-table exports.
-
-The `artifact_manifest.csv` and `artifact_manifest.json` files provide output
-paths, sizes, and SHA-256 checksums for the tracked result snapshot.
-
-## 5. Reproducibility notes
-
-The workflow uses fixed seeds and fixed split definitions. Exact floating-point
-results can still vary with Python, scikit-learn, XGBoost, BLAS, CPU, and GPU
-versions. Treat the committed result files as the reference snapshot for the
-manuscript.
+Wavy-channel plots/tables are regenerated with `python scripts/wavy_channel_exports.py`. U-bend exports use `python scripts/ubend_exports.py`; its CSV/LaTeX tables, vector PDF/PNG figures, plot-data CSVs and PDF reports remain together under the result folder. Partial checkpoints must not be represented as a complete study. If scientific settings change, use a separate output location or explicitly regenerate affected checkpoints rather than mixing settings.

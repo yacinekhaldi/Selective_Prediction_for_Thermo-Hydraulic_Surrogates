@@ -1,0 +1,18 @@
+{
+  "fit_seconds": 0.9640319999307394,
+  "conformal_calibration_groups": 116,
+  "conformal_correction": 4.338638672621073,
+  "seed": 137,
+  "fold": "G06",
+  "target": "DelP_Pa",
+  "model": "CQR",
+  "counts": {
+    "fit": 1840,
+    "tune": 308,
+    "scale": 460,
+    "cal": 464,
+    "id_test": 768,
+    "test": 768
+  },
+  "fit_case_hash": "7bdae856e7f8170b75637ab6aa696178cf84379987cfaee5d67cdbeaf2974f0a"
+}

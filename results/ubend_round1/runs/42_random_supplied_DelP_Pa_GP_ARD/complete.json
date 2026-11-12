@@ -1,0 +1,19 @@
+{
+  "kernel": "1.32**2 * RBF(length_scale=[2.43, 4.68, 3.56, 2.44, 2.69, 5.03, 10.8, 4.18, 11.4, 30, 11.3, 6.22, 30, 30, 3.1, 3.33, 3.35, 4.05, 30, 23.2, 30, 24.9, 19.3, 19.3, 10.5, 11, 28, 30])",
+  "hyperparameter_subset": 512,
+  "fit_seconds": 4.588001799999802,
+  "protocol": "ubend_round1_v1",
+  "seed": 42,
+  "fold": "random_supplied",
+  "target": "DelP_Pa",
+  "model": "GP_ARD",
+  "counts": {
+    "fit": 4830,
+    "tune": 805,
+    "scale": 1208,
+    "cal": 1208,
+    "test": 895,
+    "id_test": 0
+  },
+  "fit_case_hash": "89c5e2a70a6514335e368433152c463a026ef08e17a946866ecb741f8d6d63f6"
+}

@@ -1,0 +1,16 @@
+\begin{table}[htbp]\centering\small\setlength{\tabcolsep}{3pt}\begin{tabular}{llllll}
+\toprule
+Fold & Target & Model & Fit budget & Fit rows & MAPE \%\\\midrule
+Design random & Cooling objective & ExtraTrees\_single & fit & 4294.000 & 4.874\\
+Design random & Cooling objective & ExtraTrees\_single & outer\_training & 7156.000 & 4.731\\
+Design random & Cooling objective & SVR\_tuned & fit & 4294.000 & 2.372\\
+Design random & Pressure drop & ExtraTrees\_single & fit & 4294.000 & 13.816\\
+Design random & Pressure drop & ExtraTrees\_single & outer\_training & 7156.000 & 13.089\\
+Design random & Pressure drop & SVR\_tuned & fit & 4294.000 & 9.141\\
+Supplied random & Cooling objective & ExtraTrees\_single & fit & 4830.000 & 4.644\\
+Supplied random & Cooling objective & ExtraTrees\_single & outer\_training & 8051.000 & 4.493\\
+Supplied random & Cooling objective & SVR\_tuned & fit & 4830.000 & 2.298\\
+Supplied random & Pressure drop & ExtraTrees\_single & fit & 4830.000 & 13.272\\
+Supplied random & Pressure drop & ExtraTrees\_single & outer\_training & 8051.000 & 12.552\\
+Supplied random & Pressure drop & SVR\_tuned & fit & 4830.000 & 8.647\\
+\bottomrule\end{tabular}\caption{Single ET on common fit versus full outer train and tune-selected converged SVR on common fit. Three-run means isolate training budget from selective scoring.}\label{tab:ubend-fit_budget}\end{table}

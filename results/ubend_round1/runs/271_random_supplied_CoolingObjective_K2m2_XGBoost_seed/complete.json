@@ -1,0 +1,20 @@
+{
+  "mean_member_correlation": 0.9959716189700465,
+  "tune_mean_relative_std": 0.006198077462613583,
+  "fit_seconds": 6.998496000000159,
+  "test_single_member_mape": 3.230800871416516,
+  "protocol": "ubend_round1_v1",
+  "seed": 271,
+  "fold": "random_supplied",
+  "target": "CoolingObjective_K2m2",
+  "model": "XGBoost_seed",
+  "counts": {
+    "fit": 4830,
+    "tune": 805,
+    "scale": 1208,
+    "cal": 1208,
+    "test": 895,
+    "id_test": 0
+  },
+  "fit_case_hash": "44c5d86e5dc1011e2674e0c3d23d6a64251a5216abfca001853986f86e8c797d"
+}

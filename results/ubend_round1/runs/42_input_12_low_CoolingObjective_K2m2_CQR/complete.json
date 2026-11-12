@@ -1,0 +1,19 @@
+{
+  "fit_seconds": 1.941023800000039,
+  "conformal_calibration_groups": 858,
+  "conformal_correction": 0.20359837988580143,
+  "protocol": "ubend_round1_v1",
+  "seed": 42,
+  "fold": "input_12_low",
+  "target": "CoolingObjective_K2m2",
+  "model": "CQR",
+  "counts": {
+    "fit": 3434,
+    "tune": 573,
+    "scale": 859,
+    "cal": 858,
+    "id_test": 1432,
+    "test": 1790
+  },
+  "fit_case_hash": "1d034ea02ad649ffdf0766a74a876610b507dd9a182c89e6a5091dae8fd87443"
+}

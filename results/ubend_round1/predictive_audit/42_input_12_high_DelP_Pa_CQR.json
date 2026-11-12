@@ -1,0 +1,25 @@
+{
+  "system": "ubend",
+  "seed": 42,
+  "fold": "input_12_high",
+  "target": "DelP_Pa",
+  "model": "CQR",
+  "status": "passed",
+  "calibration_groups": 858,
+  "rank": 774,
+  "correction": 3.020784885437834,
+  "row_random_descriptive_only": false,
+  "coverage": [
+    {
+      "role": "id_test",
+      "row_coverage": 0.888268156424581,
+      "group_coverage": 0.888268156424581
+    },
+    {
+      "role": "test",
+      "row_coverage": 0.9050279329608939,
+      "group_coverage": 0.9050279329608939
+    }
+  ],
+  "fit_tune_scale_vs_cal_group_overlap": 0
+}

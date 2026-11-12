@@ -1,0 +1,10 @@
+seed,fold,target,C,gamma,tune_mape,fit_status
+271,grouped_random,CoolingObjective_K2m2,1.0,scale,2.755321742555398,0
+271,grouped_random,CoolingObjective_K2m2,1.0,0.01,2.6949098015089086,0
+271,grouped_random,CoolingObjective_K2m2,1.0,0.1,4.654107492630522,0
+271,grouped_random,CoolingObjective_K2m2,10.0,scale,2.749219551325793,0
+271,grouped_random,CoolingObjective_K2m2,10.0,0.01,2.409123692890111,0
+271,grouped_random,CoolingObjective_K2m2,10.0,0.1,4.613344772719728,0
+271,grouped_random,CoolingObjective_K2m2,100.0,scale,2.7560705484302144,0
+271,grouped_random,CoolingObjective_K2m2,100.0,0.01,2.631236307710188,0
+271,grouped_random,CoolingObjective_K2m2,100.0,0.1,4.613344772719728,0

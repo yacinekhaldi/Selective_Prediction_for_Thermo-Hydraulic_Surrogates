@@ -1,0 +1,10 @@
+seed,fold,target,C,gamma,tune_mape,fit_status
+271,random_supplied,DelP_Pa,1.0,scale,9.396348465841442,0
+271,random_supplied,DelP_Pa,1.0,0.01,10.169122026251548,0
+271,random_supplied,DelP_Pa,1.0,0.1,13.724490769813276,0
+271,random_supplied,DelP_Pa,10.0,scale,9.202589512186051,0
+271,random_supplied,DelP_Pa,10.0,0.01,8.602086611497407,0
+271,random_supplied,DelP_Pa,10.0,0.1,13.721619029980683,0
+271,random_supplied,DelP_Pa,100.0,scale,9.278457880311706,0
+271,random_supplied,DelP_Pa,100.0,0.01,9.010894488419483,0
+271,random_supplied,DelP_Pa,100.0,0.1,13.721619029980683,0

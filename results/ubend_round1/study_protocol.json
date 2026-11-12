@@ -1,0 +1,46 @@
+{
+  "protocol": "ubend_round1_v1",
+  "expected_runs": 468,
+  "folds": [
+    "random_supplied",
+    "grouped_random",
+    "input_0_low",
+    "input_0_middle",
+    "input_0_high",
+    "input_6_low",
+    "input_6_middle",
+    "input_6_high",
+    "input_12_low",
+    "input_12_middle",
+    "input_12_high",
+    "combined_low",
+    "combined_high"
+  ],
+  "seeds": [
+    42,
+    137,
+    271
+  ],
+  "models": [
+    "ExtraTrees_seed",
+    "ExtraTrees_bootstrap",
+    "XGBoost_seed",
+    "GP_ARD",
+    "LogPolynomial",
+    "CQR"
+  ],
+  "targets": [
+    "CoolingObjective_K2m2",
+    "DelP_Pa"
+  ],
+  "workers": 2,
+  "shift_definition": "fixed input_0,input_6,input_12 low/high outer quintiles and central 40-60% slabs; two joint marginal-exclusion stress tests",
+  "primary_tolerances": {
+    "CoolingObjective_K2m2": 5,
+    "DelP_Pa": 10
+  },
+  "tolerances_are_illustrative": true,
+  "main_policy": "unbounded UD_max, independent 90th percentile calibration; binary accept/abstain",
+  "physics": "positivity and expanded fit-response range only; no assumed geometry monotonicity",
+  "data_preprocessing": "identity geometry coordinates; fit-only standardization; pressure log1p as in original; no solver-statistic features"
+}

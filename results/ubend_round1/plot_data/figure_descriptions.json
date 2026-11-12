@@ -1,0 +1,12 @@
+{
+  "coverage": "Design-random test: three-run mean retained MAPE versus measured coverage; the cutoff is calibrated independently at a nominal 90% budget. Models can return different populations.",
+  "grouped_parity": "Seed-42 design-random test cases, same held-out designs across models. Dashed lines indicate exact agreement; axes show physical target units.",
+  "distance_failure": "Seed-42 high-x0 geometry-support test: response APE versus raw mean five-neighbor distance. Distances alone do not establish response error.",
+  "mixture": "Common-model mixtures of supported and high-x0 test designs, averaged over three runs. False accepts use all test cases as the denominator; tolerances are illustrative.",
+  "map": "Seed-42 design-random accepted fractions in x0/x6 quintile cells, averaged over actual test cases and all remaining geometry coordinates. Cell counts are supplied; this is not a full-grid physical validity map.",
+  "feature_importance": "Seed-42 ExtraTrees common-fit control on design-random data. Top ten impurity importances are descriptive, not causal physical effects.",
+  "dataset": "Response means in ten x0 bins across successful designs, averaged over other geometry coordinates; lines connect bin means, not additional CFD observations.",
+  "scores": "Seed-42 design-random XGB uncertainty, distance and fused score distributions. The dashed line is the independently calibrated max-score cutoff.",
+  "risk_CoolingObjective_K2m2": "Cooling-objective seed-42 risk-coverage curves, separate folds, expected uniform ordering within score ties. These are retrospective rankings, not guaranteed deterministic threshold paths.",
+  "risk_DelP_Pa": "Pressure-drop seed-42 risk-coverage curves under the same tie-aware, per-fold conventions; error is physical-unit MAPE in percent."
+}

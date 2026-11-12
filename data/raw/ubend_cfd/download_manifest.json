@@ -1,0 +1,40 @@
+{
+  "repository": "https://huggingface.co/datasets/JDecke/ubend-cfd",
+  "revision": "838b96a5c7e72eaf1177f8b8b49c854b80f20592",
+  "downloaded_at_utc": "2026-11-11T15:26:28.429650+00:00",
+  "configuration": "params",
+  "license": "CC-BY-NC-4.0 (as declared in upstream README)",
+  "files": [
+    {
+      "path": "README.md",
+      "url": "https://huggingface.co/datasets/JDecke/ubend-cfd/resolve/838b96a5c7e72eaf1177f8b8b49c854b80f20592/README.md",
+      "bytes": 10308,
+      "sha256": "ef0dd40418ae11efc3391358b7e5648ad3871f3b5e61257f3d88fa96c9c527e2"
+    },
+    {
+      "path": "params/data.parquet",
+      "url": "https://huggingface.co/datasets/JDecke/ubend-cfd/resolve/838b96a5c7e72eaf1177f8b8b49c854b80f20592/params/data.parquet",
+      "bytes": 2822758,
+      "sha256": "8c8be6157f4619601506f232c89cb71601b850635f912a08d7a24cb600cc7c6f"
+    },
+    {
+      "path": "params/train.parquet",
+      "url": "https://huggingface.co/datasets/JDecke/ubend-cfd/resolve/838b96a5c7e72eaf1177f8b8b49c854b80f20592/params/train.parquet",
+      "bytes": 2331178,
+      "sha256": "77fc495a3498cebe1f39dbbafa5f1b256f59128dda6170e98766d68fa759a093"
+    },
+    {
+      "path": "params/test.parquet",
+      "url": "https://huggingface.co/datasets/JDecke/ubend-cfd/resolve/838b96a5c7e72eaf1177f8b8b49c854b80f20592/params/test.parquet",
+      "bytes": 273167,
+      "sha256": "ad704e9b63c07c29c512f18ec9785b01e6341d22fababef339776aa6894129c7"
+    },
+    {
+      "path": "params/failed.parquet",
+      "url": "https://huggingface.co/datasets/JDecke/ubend-cfd/resolve/838b96a5c7e72eaf1177f8b8b49c854b80f20592/params/failed.parquet",
+      "bytes": 268862,
+      "sha256": "9bd62d45122a9e2bc637e8b2c3cfb1fa451150b446272bc4391b9ac0047fec4e"
+    }
+  ],
+  "scope": "All tabular Parquet files and upstream documentation; full CFD fields and animations excluded."
+}

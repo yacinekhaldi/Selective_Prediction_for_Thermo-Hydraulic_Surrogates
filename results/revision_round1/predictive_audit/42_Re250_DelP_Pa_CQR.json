@@ -1,0 +1,25 @@
+{
+  "system": "wavy",
+  "seed": 42,
+  "fold": "Re250",
+  "target": "DelP_Pa",
+  "model": "CQR",
+  "status": "passed",
+  "calibration_groups": 104,
+  "rank": 95,
+  "correction": 5.628479393753707,
+  "row_random_descriptive_only": false,
+  "coverage": [
+    {
+      "role": "id_test",
+      "row_coverage": 0.8959537572254336,
+      "group_coverage": 0.8959537572254336
+    },
+    {
+      "role": "test",
+      "row_coverage": 0.53125,
+      "group_coverage": 0.53125
+    }
+  ],
+  "fit_tune_scale_vs_cal_group_overlap": 0
+}

@@ -15,3 +15,5 @@ Thumbs.db
 *.temp
 *.swp
 *.bak
+
+.revision-venv/

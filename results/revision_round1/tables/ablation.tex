@@ -1,0 +1,28 @@
+\begin{table}[htbp]\centering\scriptsize\caption{XGBoost score comparisons on grouped random tests (means over three seeds). Risk and AURC use MAPE in percent. Detection metrics use the stated engineering failure threshold; undefined values are marked --. Complete fold/model results are supplied as CSV.}\label{tab:ablation}
+\begin{tabular}{llllllll}\toprule
+Score & Target & Ret. (\%) & Risk & AURC & AUROC & AUPRC & $\rho$\\\midrule
+U & $Nu_{\rm avg}$ & 89.00 & 0.48 & 0.39 & 0.845 & 0.228 & 0.322\\
+U & $\Delta P$ & 90.33 & 3.41 & 2.29 & 0.896 & 0.528 & 0.556\\
+D & $Nu_{\rm avg}$ & 88.42 & 0.57 & 0.53 & 0.637 & 0.058 & 0.104\\
+D & $\Delta P$ & 88.42 & 3.96 & 3.15 & 0.718 & 0.207 & 0.262\\
+V & $Nu_{\rm avg}$ & 100.00 & 0.60 & -- & 0.500 & 0.010 & --\\
+V & $\Delta P$ & 100.00 & 4.31 & -- & 0.500 & 0.090 & --\\
+UD\_max & $Nu_{\rm avg}$ & 87.95 & 0.51 & 0.45 & 0.832 & 0.220 & 0.206\\
+UD\_max & $\Delta P$ & 90.26 & 3.60 & 2.72 & 0.805 & 0.371 & 0.365\\
+UD\_equal & $Nu_{\rm avg}$ & 88.64 & 0.50 & 0.42 & 0.831 & 0.196 & 0.270\\
+UD\_equal & $\Delta P$ & 90.30 & 3.38 & 2.48 & 0.875 & 0.478 & 0.483\\
+UDV\_max & $Nu_{\rm avg}$ & 87.95 & 0.51 & 0.45 & 0.832 & 0.220 & 0.206\\
+UDV\_max & $\Delta P$ & 90.26 & 3.60 & 2.72 & 0.805 & 0.371 & 0.365\\
+UDV\_equal & $Nu_{\rm avg}$ & 88.64 & 0.50 & 0.42 & 0.831 & 0.196 & 0.270\\
+UDV\_equal & $\Delta P$ & 90.30 & 3.38 & 2.48 & 0.875 & 0.478 & 0.483\\
+leverage & $Nu_{\rm avg}$ & 87.99 & 0.57 & 0.49 & 0.698 & 0.026 & 0.127\\
+leverage & $\Delta P$ & 87.99 & 4.02 & 3.16 & 0.689 & 0.196 & 0.241\\
+support\_gap & $Nu_{\rm avg}$ & 100.00 & 0.60 & -- & 0.500 & 0.010 & --\\
+support\_gap & $\Delta P$ & 100.00 & 4.31 & -- & 0.500 & 0.090 & --\\
+learned & $Nu_{\rm avg}$ & 88.96 & 0.53 & 0.66 & 0.556 & 0.183 & -0.001\\
+learned & $\Delta P$ & 90.55 & 3.37 & 2.42 & 0.882 & 0.517 & 0.515\\
+legacy\_clipped & $Nu_{\rm avg}$ & 92.68 & 0.53 & 0.45 & 0.813 & 0.042 & 0.203\\
+legacy\_clipped & $\Delta P$ & 92.75 & 3.86 & 2.74 & 0.798 & 0.295 & 0.361\\
+random & $Nu_{\rm avg}$ & 90.87 & 0.60 & 0.60 & 0.511 & 0.014 & -0.009\\
+random & $\Delta P$ & 90.87 & 4.32 & 4.51 & 0.504 & 0.095 & -0.023\\
+\bottomrule\end{tabular}\end{table}

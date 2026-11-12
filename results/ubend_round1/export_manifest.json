@@ -1,0 +1,49 @@
+{
+  "tables": {
+    "dataset_summary": "Successful U-bend design data in released coordinate/physical target units. Inputs are signed geometry parameters, pressure is Pa, and the cooling objective is K squared times m squared. No error-based trimming or global standardization is applied.",
+    "split_counts": "Exact row counts, identical across outer seeds. Random tests use their test set as ID evaluation; structured tests have a separate supported ID set. Joint stress tests deliberately exclude unused marginal-only cases.",
+    "full_primary": "U-bend U+D-max results, means over three full runs. Empty accepted sets have undefined retained metrics. All error columns are percentages.",
+    "grouped": "Random-design evaluation, three-run means and sample SD. Calibration uses a nominal 90% acceptance budget; measured test coverage is shown.",
+    "supplied_random": "Random-design evaluation, three-run means and sample SD. Calibration uses a nominal 90% acceptance budget; measured test coverage is shown.",
+    "structured": "Geometry-coordinate support shifts, defined before examining errors; low/high are endpoint support tests and middle is a missing interior slab. Means over three runs.",
+    "gate_decisions": "Binary calibrated acceptance/abstention. The warning tier is a separate retrospective diagnostic only.",
+    "false_decisions": "False accept and false abstain use all test rows as denominator; failure prevalence is tolerance defined. Tolerances are illustrative, not engineering standards.",
+    "detection": "Failure detection means over evaluable runs; undefined single-class detection metrics remain blank/--. Valid AUC run count is explicit.",
+    "ablation": "XGB score ablation on design-random tests. AURC is tie-aware and undefined for constant scores; it is a ranking diagnostic, not a risk guarantee.",
+    "intervals": "Seed 42; 500 resamples conditional on fitted model. One row per unique design. Six covariate-only KMeans strata give coarse descriptive bands, not confidence intervals for unseen physical geometry families.",
+    "competitors": "Point-selection risk and CQR interval coverage are different estimands. GP pressure point estimates are inverse-log medians, while tree ensemble estimates are physical-unit member means.",
+    "matched_risk": "MAPE at approximately 90% expected retained coverage, averaged over three runs. Random ordering inside ties may be unattainable by one deterministic cutoff.",
+    "binary_sweep": "XGB seed-42 sensitivity. Binary calibration quantiles vary the cutoff; tolerance sweeps vary failure labels without refitting or moving the cutoff.",
+    "tolerances": "XGB seed-42 sensitivity. Binary calibration quantiles vary the cutoff; tolerance sweeps vary failure labels without refitting or moving the cutoff.",
+    "conformal_groups": "CQR 90% intervals, three-run means. Each design contains one row, so row/design coverage coincide. Group exchangeability is hypothetical under Sobol sampling and does not hold automatically for imposed support shifts. Width is in physical target units.",
+    "point_baselines": "Original five point-regressor families on full outer training. These are context benchmarks, not training-budget-matched selective models; RMSE is in target units.",
+    "fit_budget": "Single ET on common fit versus full outer train and tune-selected converged SVR on common fit. Three-run means isolate training budget from selective scoring.",
+    "sensitivity": "Three-state diagnostic for XGB cooling objective, seed 42/design-random. Primary decisions are binary; no intermediate risk ordering is presumed.",
+    "actual_thresholds": "Independent 90th-percentile binary calibration cutoffs and actual test retention, seed 42. Unbounded scores permit cutoffs above one; cutoffs are not error-probability thresholds.",
+    "error_distribution": "Error-distribution summaries averaged over three runs. Symmetric APE is bounded by 200%; raw per-run quantiles, maxima and numerical guard counts are exported separately."
+  },
+  "figures": [
+    "coverage.pdf",
+    "dataset.pdf",
+    "distance_failure.pdf",
+    "feature_importance.pdf",
+    "grouped_parity.pdf",
+    "map.pdf",
+    "mixture.pdf",
+    "risk_CoolingObjective_K2m2.pdf",
+    "risk_DelP_Pa.pdf",
+    "scores.pdf"
+  ],
+  "plot_data": [
+    "coverage.csv",
+    "dataset.csv",
+    "distance_failure.csv",
+    "feature_importance.csv",
+    "grouped_parity.csv",
+    "map.csv",
+    "mixture.csv",
+    "risk_CoolingObjective_K2m2.csv",
+    "risk_DelP_Pa.csv",
+    "scores.csv"
+  ]
+}

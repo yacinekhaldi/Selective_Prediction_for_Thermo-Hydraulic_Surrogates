@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "scope": "seed-42 design-random GP pressure and CQR both targets; no assertion about all-fold Gaussian guard inactivity",
+  "records": [
+    {
+      "check": "GP unstandardized pressure mean/std and inverse-log median replay",
+      "seed": 42,
+      "fold": "grouped_random",
+      "target": "DelP_Pa",
+      "n": 1790,
+      "max_mean_difference": 0.0,
+      "max_std_difference": 2.6867397195928788e-14,
+      "median_guard_count": 0,
+      "variance_guard_count": 0
+    },
+    {
+      "check": "CQR group-quantile correction and endpoints replay",
+      "seed": 42,
+      "fold": "grouped_random",
+      "target": "CoolingObjective_K2m2",
+      "calibration_groups": 1073,
+      "rank": 967,
+      "correction": 0.13879534788440306,
+      "point_and_endpoints_match": true
+    },
+    {
+      "check": "CQR group-quantile correction and endpoints replay",
+      "seed": 42,
+      "fold": "grouped_random",
+      "target": "DelP_Pa",
+      "calibration_groups": 1073,
+      "rank": 967,
+      "correction": 1.9517727542653205,
+      "point_and_endpoints_match": true
+    }
+  ]
+}

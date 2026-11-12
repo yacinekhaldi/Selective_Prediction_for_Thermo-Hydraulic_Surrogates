@@ -1,0 +1,107 @@
+{
+  "status": "passed",
+  "dataset": "U-bend CFD, updated Hugging Face params release",
+  "source_repository": "https://huggingface.co/datasets/JDecke/ubend-cfd",
+  "source_revision": "838b96a5c7e72eaf1177f8b8b49c854b80f20592",
+  "source_file_sha256": {
+    "README.md": "ef0dd40418ae11efc3391358b7e5648ad3871f3b5e61257f3d88fa96c9c527e2",
+    "params/data.parquet": "8c8be6157f4619601506f232c89cb71601b850635f912a08d7a24cb600cc7c6f",
+    "params/train.parquet": "77fc495a3498cebe1f39dbbafa5f1b256f59128dda6170e98766d68fa759a093",
+    "params/test.parquet": "ad704e9b63c07c29c512f18ec9785b01e6341d22fababef339776aa6894129c7",
+    "params/failed.parquet": "9bd62d45122a9e2bc637e8b2c3cfb1fa451150b446272bc4391b9ac0047fec4e"
+  },
+  "rows": {
+    "raw_total": 10000,
+    "successful": 8946,
+    "train": 8051,
+    "test": 895,
+    "failed": 1054
+  },
+  "failure_counts": {
+    "mesh_generation_failed": 989,
+    "solver_diverged": 65
+  },
+  "features": [
+    "input_0",
+    "input_1",
+    "input_2",
+    "input_3",
+    "input_4",
+    "input_5",
+    "input_6",
+    "input_7",
+    "input_8",
+    "input_9",
+    "input_10",
+    "input_11",
+    "input_12",
+    "input_13",
+    "input_14",
+    "input_15",
+    "input_16",
+    "input_17",
+    "input_18",
+    "input_19",
+    "input_20",
+    "input_21",
+    "input_22",
+    "input_23",
+    "input_24",
+    "input_25",
+    "input_26",
+    "input_27"
+  ],
+  "targets": [
+    "DelP_Pa",
+    "CoolingObjective_K2m2"
+  ],
+  "target_mapping": {
+    "target_0": "DelP_Pa",
+    "target_1": "CoolingObjective_K2m2"
+  },
+  "target_units": {
+    "DelP_Pa": "Pa",
+    "CoolingObjective_K2m2": "K^2 m^2 (integrated squared wall/inlet temperature difference)"
+  },
+  "metadata_columns": [
+    "case_uid",
+    "raw_row_id",
+    "sample_id",
+    "geometry_id"
+  ],
+  "model_data": "ubend_longform.csv",
+  "supplied_split": "random90_10_split.csv",
+  "preprocessing": {
+    "numeric_conversion": "strict",
+    "nonfinite_model_values": 0,
+    "missing_model_values": 0,
+    "duplicate_input_rows": 0,
+    "imputation": "none",
+    "outlier_removal": "none; retain every successful simulation",
+    "input_transform": "identity: signed geometry parameters remain in their released coordinates",
+    "scaling": "none during file preprocessing; fit StandardScaler on fit rows only in model experiments",
+    "target_transform": "physical-unit labels retained; pressure log1p/inverse expm1 may be applied inside the model pipeline as in the original study",
+    "failed_runs": "separate; sentinel codes never treated as physical regression targets",
+    "solver_statistics": "separate sidecar; never input features",
+    "geometry_id": "unique design identifier, not a geometry-family classification",
+    "raw_row_id": "one-based aggregate row; sample_id is zero-based upstream row identifier"
+  },
+  "validation": {
+    "source_hashes_verified": true,
+    "source_split_disjoint": true,
+    "split_union_matches_raw": true,
+    "split_values_match_raw_by_sample_id": true,
+    "csv_roundtrip_passed": true
+  },
+  "solver_diagnostic_missing_values": {
+    "target_0_std": 1,
+    "target_1_std": 234
+  },
+  "output_sha256": {
+    "ubend_longform.csv": "36d352b0780ce82c4904784983364be49a9324cd395e9c825c8261426c99d946",
+    "random90_10_split.csv": "9a36e8c5daebd847919447d8f4aca7e800f30917b5227262a218cce186a3a9b8",
+    "failed_simulations.csv": "952e48cc6d6902982b87c4fb1fe674d8cd5a3a0f466a40928b8b1388dca33952",
+    "solver_diagnostics.csv": "87e20aecb44b212c9b4123dc49b3b06384be6cbf5e598f70b57ff9e164088857",
+    "numeric_summary.csv": "be3def18e6a5786d4904a2a75fead05a8fa8311e6314f090ae4f6c1fad87d993"
+  }
+}
